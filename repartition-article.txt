@@ -1,0 +1,5 @@
+/!\ a bien travaillé sur le excel a son nom
+
+[0;90]    pierre, alex
+[90;180]  pierre, badr
+[180;270] alex, badr
