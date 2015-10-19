@@ -1,0 +1,439 @@
+TY  - JOUR
+TI  - On applying machine learning techniques for design pattern detection
+T2  - Journal of Systems and Software
+VL  - 103
+IS  - C
+SP  - 102
+EP  - 117
+PY  - 2015
+DO  - 10.1016/jjss.2015.01.037
+AU  - Zanoni, M.
+AU  - Fontana, F.A.
+AU  - Stella, F.
+AD  - Department of Informatics, University of Milano-Bicocca, Milan, Italy
+AB  - The detection of design patterns is a useful activity giving support to the comprehension and maintenance of software systems. Many approaches and tools have been proposed in the literature providing different results. In this paper, we extend a previous work regarding the application of machine learning techniques for design pattern detection, by adding a more extensive experimentation and enhancements in the analysis method. Here we exploit a combination of graph matching and machine learning techniques, implemented in a tool we developed, called MARPLE-DPD. Our approach allows the application of machine learning techniques, leveraging a modeling of design patterns that is able to represent pattern instances composed of a variable number of classes. We describe the experimentations for the detection of five design patterns on 10 open source software systems, compare the performances obtained by different learning models with respect to a baseline, and discuss the encountered issues. © 2015 Elsevier Inc. All rights reserved.
+KW  - Design pattern detection
+KW  - Machine learning techniques
+N1  - Export Date: 19 October 2015
+DB  - Scopus
+UR  - http://www.scopus.com/inward/record.url?eid=2-s2.0-84928014365&partnerID=40&md5=e479fea7930c9cb3c6568e46b09d33a0
+ER  - 
+
+TY  - JOUR
+TI  - On applying machine learning techniques for design pattern detection
+T2  - Journal of Systems and Software
+VL  - 103
+SP  - 102
+EP  - 117
+PY  - 2015
+DO  - 10.1016/j.jss.2015.01.037
+AU  - Zanoni, M.
+AU  - Arcelli Fontana, F.
+AU  - Stella, F.
+AD  - Department of Informatics, University of Milano-Bicocca, Milano, Italy
+AB  - The detection of design patterns is a useful activity giving support to the comprehension and maintenance of software systems. Many approaches and tools have been proposed in the literature providing different results. In this paper, we extend a previous work regarding the application of machine learning techniques for design pattern detection, by adding a more extensive experimentation and enhancements in the analysis method. Here we exploit a combination of graph matching and machine learning techniques, implemented in a tool we developed, called MARPLE-DPD. Our approach allows the application of machine learning techniques, leveraging a modeling of design patterns that is able to represent pattern instances composed of a variable number of classes. We describe the experimentations for the detection of five design patterns on 10 open source software systems, compare the performances obtained by different learning models with respect to a baseline, and discuss the encountered issues. © 2015 Elsevier Inc. All rights reserved.
+KW  - Design pattern detection
+KW  - Machine learning techniques
+N1  - Export Date: 19 October 2015
+DB  - Scopus
+UR  - http://www.scopus.com/inward/record.url?eid=2-s2.0-84924865612&partnerID=40&md5=510a263faefe2bd0ff7ecce4c1ac0775
+ER  - 
+
+TY  - INPR
+TI  - A rule-based procedure for automatic recognition of design patterns in UML diagrams
+T2  - Software - Practice and Experience
+PY  - 2015
+DO  - 10.1002/spe.2336
+AU  - Di Martino, B.
+AU  - Esposito, A.
+AD  - Department of Industrial and Information Engineering Second University of Naples Real Casa dell'Annunziata via Roma, 29 81031 Aversa (CE) Italy
+AB  - In the present work, we describe a procedure and a prototype implementation for the automatic recognition of design patterns from documentation of software artefacts design and implementation, provided in a machine readable form, namely, the XML Metadata Interchange (XMI) coded representation of UML class diagrams. The procedure exploits a semantic representation of the patterns to be recognized, based on an existing Web Ontology Language (OWL), known as object design ontology layer (ODOL), defined by the University of Massey (New Zealand), which has been augmented with an OWL-S based representation of the patterns' dynamic behaviour. Both the UML set of diagrams related to the analysed software artefacts and the ODOL+OWL-S patterns representation are automatically scanned and translated into a first-order logic representation (namely Prolog). A set of first-order logic rules, independent from the specific pattern to be recognized, has been defined to describe the heuristics and features which trigger the recognition, exploiting the Prolog description of the patterns to be recognized and the base of Prolog facts, which represents the UML documentation. © 2015 John Wiley & Sons, Ltd.
+KW  - Design pattern
+KW  - First-order logic
+KW  - OWL
+KW  - OWL-S
+KW  - Pattern recognition
+KW  - Prolog
+KW  - UML
+N1  - Export Date: 19 October 2015
+DB  - Scopus
+N1  - Article in Press
+UR  - http://www.scopus.com/inward/record.url?eid=2-s2.0-84931073776&partnerID=40&md5=42153ee2ef6331d9abab9e53acad1776
+ER  - 
+
+TY  - CONF
+TI  - Measuring the quality of design pattern detection results
+T2  - 2015 IEEE 22nd International Conference on Software Analysis, Evolution, and Reengineering, SANER 2015 - Proceedings
+SP  - 53
+EP  - 62
+PY  - 2015
+DO  - 10.1109/SANER.2015.7081815
+AU  - Yang, S.
+AU  - Manzer, A.
+AU  - Tzerpos, V.
+AD  - York University, Toronto, ON, Canada
+AB  - Detecting design patterns in large software systems is a common reverse engineering task that can help the comprehension process of the system's design. While several design pattern detection tools presented in the literature are capable of detecting design patterns automatically, evaluating these detection results is usually done in a manual and subjective fashion. Differences in design pattern definitions, as well as pattern instance counting and presenting, exacerbate the difficulty of evaluating design pattern detection results. In this paper, we present a novel approach to evaluating and comparing design pattern detection results. Our approach, called MoRe, introduces a novel way to present design pattern instances in a uniform fashion. Based on this characterization of design pattern instances, we propose four measures for design pattern detection evaluation that convey a concise assessment of the quality of the results produced by a given detection method. We have implemented these measures, and present case studies that showcase their usefulness. © 2015 IEEE.
+N1  - Export Date: 19 October 2015
+DB  - Scopus
+C7  - 7081815
+UR  - http://www.scopus.com/inward/record.url?eid=2-s2.0-84928674354&partnerID=40&md5=5ee6b5065631d0dec95b66d3020181a9
+ER  - 
+
+TY  - JOUR
+TI  - Source code and design conformance, design pattern detection from source code by classification approach
+T2  - Applied Soft Computing Journal
+VL  - 26
+SP  - 357
+EP  - 367
+PY  - 2015
+DO  - 10.1016/j.asoc.2014.10.027
+AU  - Chihada, A.
+AU  - Jalili, S.
+AU  - Hasheminejad, S.M.H.
+AU  - Zangooei, M.H.
+AD  - SCS Lab., Computer Engineering Department, Tarbiat Modares University, Tehran, Iran
+AB  - Nowadays, software designers attempt to employ design patterns in software design phase, but design patterns may be not used in the implementation phase. Therefore, one of the challenging issues is conformance checking of source code and design, i.e., design patterns. In addition, after developing a system, usually its documents are not maintained, so, identifying design pattern from source code can help to achieve the design of an existing system as a reverse engineering task. The variant implementations (i.e., different source codes) of a design pattern make hard to detect the design pattern instances from the source code. To address this issue, in this paper, we propose a new method which aims to map the design pattern detection problem into a learning problem. The proposed design pattern detector is made by learning from the information extracted from design pattern instances which normally include variant implementations. To evaluate the proposed method, we applied it on open source codes to detect six different design patterns. The experimental results show that the proposed method is promising and effective. © 2014 Elsevier B.V. All rights reserved.
+KW  - Design pattern detection
+KW  - Machine learning
+KW  - Object-oriented metrics
+KW  - Support vector machine
+N1  - Export Date: 19 October 2015
+DB  - Scopus
+UR  - http://www.scopus.com/inward/record.url?eid=2-s2.0-84909959988&partnerID=40&md5=6bd6f1f30972320bb6c2d75940a48b37
+ER  - 
+
+TY  - CONF
+TI  - A survey: Design pattern detection approaches with metrics
+T2  - Proceedings - NCET NRES EM 2014: 2nd IEEE National Conference on Emerging Trends in New and Renewable Energy Sources and Energy Management
+SP  - 22
+EP  - 26
+PY  - 2015
+DO  - 10.1109/NCETNRESEM.2014.7088733
+AU  - Priya, R.K.
+AD  - Department of Computer Science and Information Technology, Aarupadai Veedu Institute of Technology, Paiyanoor, Chennai, India
+AB  - A designing pattern provides generic idea of a solution to solve a recurring problem with variety of goals and constraints. In object oriented program, design patterns are recognized by source code. This paper provides overall idea about design patterns, different types of analysis and their comparison details with detection techniques of pattern. It also explains how it is related with non functional requirements in improving the quality of pattern. © 2014 IEEE.
+N1  - Export Date: 19 October 2015
+DB  - Scopus
+C7  - 7088733
+UR  - http://www.scopus.com/inward/record.url?eid=2-s2.0-84929320400&partnerID=40&md5=3cc8c94b7d5aa78fc9de48741b9aacb2
+ER  - 
+
+TY  - JOUR
+TI  - Grid voltage control of ±200 Mvar STATCOM
+T2  - Dianli Zidonghua Shebei/Electric Power Automation Equipment
+VL  - 35
+IS  - 5
+SP  - 29
+EP  - 35
+PY  - 2015
+DO  - 10.16081/j.issn.1006-6047.2015.05.005
+AU  - Liu, J.
+AU  - Liu, Y.
+AU  - He, W.
+AD  - Guangdong Power Grid Corporation Dongguan Power Supply Bureau, Dongguan, China
+AB  - Combined with the application practice of ±200 Mvar STATCOM in China Southern Power Grid, the strategy of power grid voltage control by large-capacity STATCOM is studied. Based on the principle of dynamic reactive power compensation, four control modes of STATCOM device are introduced. It is pointed out that, only the steady-state voltage control mode and transient voltage control mode are suitable for the formal operation and the pattern recognition and switchover are automatically carried out according to the voltage of target bus. The basic parameters of steady-state voltage control mode are designed and its voltage regulating range and effect on grid voltage are analyzed. The STATCOM transient voltage control logic is designed based on the specific analysis of power grid faults and it is pointed out that, the active blocking state with zero reactive power can be entered in case of near-end fault. The comparison between daily grid voltage curve and STATCOM reactive power curve confirms that, STATCOM regulates the grid voltage in real time by tracking it in the steady-state voltage control mode. The fault recording wave analysis shows that, STATCOM can send up to 90% of the designed maximum transient reactive power output in about 20 ms. Applications verify the proposed strategy of STATCOM power grid voltage control is feasible and effective. ©, 2015, Electric Power Automation Equipment Press. All right reserved.
+KW  - Application effect
+KW  - Design
+KW  - Pattern recognition
+KW  - power compensation
+KW  - Reactive
+KW  - STATCOM
+KW  - Steady-state voltage control
+KW  - Transient voltage control
+KW  - Voltage control
+N1  - Export Date: 19 October 2015
+DB  - Scopus
+UR  - http://www.scopus.com/inward/record.url?eid=2-s2.0-84937036986&partnerID=40&md5=0ab677c63ffcdf8403ed28ead1729c7f
+ER  - 
+
+TY  - JOUR
+TI  - Transforming the natural colors of an image into product design: A computer-aided color planning system based on fuzzy pattern recognition
+T2  - Color Research and Application
+VL  - 40
+IS  - 6
+SP  - 612
+EP  - 625
+PY  - 2015
+DO  - 10.1002/col.21929
+AU  - Hsiao, S.-W.
+AU  - Tsai, C.-J.
+AD  - Department of Industrial Design, National Cheng Kung University, No. 1, University Road, Tainan, Taiwan
+AB  - A computer-aided color planning system transforming an image with natural colors into product design is addressed in this study. By using analogies to natural color patterns for the solutions in product color planning, a natural color planning system is developed. The system assists the designer to obtain optimized natural colors easily for product color planning or takes the color planning of similar products by means of designers-preferred natural colors. In terms of the product color planning design, this system converts the descriptive design processes into systematic design model by three modules: (1) natural coloring module, (2) fuzzy recognition module, and (3) image evaluation module. A case study based on applying the colors of Taiwanese butterflies to the color planning of volleyball shoes was presented to verify the feasibility of this system. © 2014 Wiley Periodicals, Inc. Col Res Appl, 40, 612-625, 2015 © 2014 Wiley Periodicals, Inc.
+KW  - color planning design
+KW  - computer-aided design
+KW  - fuzzy recognition
+KW  - natural color pattern
+KW  - product design
+N1  - Export Date: 19 October 2015
+DB  - Scopus
+UR  - http://www.scopus.com/inward/record.url?eid=2-s2.0-84943199203&partnerID=40&md5=aa244920991f6dd727adedd65d97e254
+ER  - 
+
+TY  - CONF
+TI  - A methodology to optimize design pattern context size for higher sensitivity to hotspot detection using pattern association tree (PAT)
+T2  - Proceedings of SPIE - The International Society for Optical Engineering
+VL  - 9427
+PY  - 2015
+DO  - 10.1117/12.2086954
+AU  - Somani, S.
+AU  - Pathak, P.
+AU  - Verma, P.
+AU  - Madhavan, S.
+AU  - Capodieci, L.
+AD  - GLOBALFOUNDRIES Inc, 2600 Great America Way, Santa Clara, CA, United States
+AB  - Pattern based design rule checks have emerged as an alternative to the traditional rule based design rule checks in the VLSI verification flow [1]. Typically, the design-process weak-points, also referred as design hotspots, are classified into patterns of fixed size. The size of the pattern defines the radius of influence for the process. These fixed sized patterns are used to search and detect process weak points in new designs without running computationally expensive process simulations. However, both the complexity of the pattern and different kinds of physical processes affect the radii of influence. Therefore, there is a need to determine the optimal pattern radius (size) for efficient hotspot detection. The methodology described here uses a combination of pattern classification and pattern search techniques to create a directed graph, referred to as the Pattern Association Tree (PAT). The pattern association tree is then filtered based on the relevance, sensitivity and context area of each pattern node. The critical patterns are identified by traversing the tree and ranking the patterns. This method has plausible applications in various areas such as process characterization, physical design verification and physical design optimization. Our initial experiments in the area of physical design verification confirm that a pattern deck with the radius optimized for each pattern is significantly more accurate at predicting design hotspots when compared to a conventional deck of fixed sized patterns. © 2015 SPIE.
+N1  - Export Date: 19 October 2015
+DB  - Scopus
+C7  - 94270T
+UR  - http://www.scopus.com/inward/record.url?eid=2-s2.0-84932154978&partnerID=40&md5=55edd638c1bab5a77501debfefe63fd1
+ER  - 
+
+TY  - CONF
+TI  - 2015 IEEE 22nd International Conference on Software Analysis, Evolution, and Reengineering, SANER 2015 - Proceedings
+T2  - 2015 IEEE 22nd International Conference on Software Analysis, Evolution, and Reengineering, SANER 2015 - Proceedings
+PY  - 2015
+AB  - The proceedings contain 84 papers. The topics discussed include: modeling the evolution of development topics using dynamic topic models; understanding developers' natural language queries with interactive clarification; an observational study on API usage constraints and their documentation; an observational study on API usage constraints and their documentation; measuring the quality of design pattern detection results; JCHARMING: a bug reproduction approach using crash traces and directed model checking; towards a common metamodel for traces of high performance computing systems to enable software analysis tasks; automated extraction of failure reproduction steps from user interaction traces; misery loves company: crowdstacking traces to aid problem detection; and who should review my code? a file location-based code-reviewer recommendation approach for modern code review.
+N1  - Export Date: 19 October 2015
+DB  - Scopus
+UR  - http://www.scopus.com/inward/record.url?eid=2-s2.0-84928749569&partnerID=40&md5=237eafb113ad05b60a94f0b7011f5883
+ER  - 
+
+TY  - JOUR
+TI  - Pattern detection for conceptual schema recovery in data-intensive systems
+T2  - Journal of Software: Evolution and Process
+VL  - 26
+IS  - 12
+SP  - 1172
+EP  - 1192
+PY  - 2014
+DO  - 10.1002/smr
+AU  - Zanoni, M.
+AU  - Perin, F.
+AU  - Fontana, F.A.
+AU  - Viscusi, G.
+AD  - DISCo, University of Milano-Bicocca, Milan, Italy
+AD  - Software Composition Group, University of Bern, Bern, Switzerland
+AD  - EPFL (CDM MTEI CSI), Lausanne, Switzerland
+AB  - In this paper, an approach for information systems reverse engineering is proposed and applied. The aim is to support a unified perspective to the reverse engineering process of both data and software. At the state of the art, indeed, many methods, techniques, and tools for software reverse engineering have been proposed to support program comprehension, software maintenance, and software evolution. Other approaches and tools have been proposed for data reverse engineering, with the aim, for example, to provide complete and up-to-date documentation of legacy databases. However, the two engineering communities often worked independently, and very few approaches addressed the reverse engineering of both data and software as information system's constituencies. Hence, a higher integration is needed to support a better co-evolution of databases and programs, in an environment often characterized by high availability of data and volatility of information flows. Accordingly, the approach we propose leverages the detection of object-relational mapping design patterns to build a conceptual schema of the software under analysis. Then, the conceptual schema is mapped to the domain model of the system, to support the design of the evolution of the information system itself. The approach is evaluated on two large-scale open-source enterprise applications. Copyright © 2014 John Wiley & Sons, Ltd.
+KW  - Conceptual schema
+KW  - Design pattern detection
+KW  - Object-relational mapping
+KW  - Reverse engineering
+N1  - Export Date: 19 October 2015
+DB  - Scopus
+UR  - http://www.scopus.com/inward/record.url?eid=2-s2.0-84934756720&partnerID=40&md5=32b28feb586702f598f3d4f572dd0bee
+ER  - 
+
+TY  - JOUR
+TI  - Graph-based decomposition of design patterns
+T2  - International Journal of Software Engineering and its Applications
+VL  - 8
+IS  - 2
+SP  - 391
+EP  - 408
+PY  - 2014
+DO  - 10.14257/ijseia.2014.8.2.38
+AU  - Zoubeir, N.
+AU  - Khalfallah, A.
+AU  - Benahmed, S.
+AD  - Institut Supérieur d'Informatique, Canada
+AD  - Faculté des Sciences de Tunis, Tunisia
+AB  - Design patterns recognition and injection constitute challenging tasks in software engineering, since they are generally conducted in a non-formal way. In this paper, we will present an approach for decomposing and formalizing design patterns using graph transformation systems. We will propose a combined graph-based description for design patterns structure, interactions and constraints. Then, based on this description, we will introduce a set of Elementary Transformations whose diverse combinations lead to the design patterns injection. These elementary transformations are formal, precise and presented in a generic form that allows to describe the 23 design patterns defined by the GOF. Detailed descriptions and examples are presented in this paper in order to illustrate our approach. © 2014 SERSC.
+KW  - Design patterns decomposition
+KW  - Graph transformation systems
+N1  - Cited By :1
+N1  - Export Date: 19 October 2015
+DB  - Scopus
+UR  - http://www.scopus.com/inward/record.url?eid=2-s2.0-84896854439&partnerID=40&md5=2263cd74c593cbcdc65901a0f8238236
+ER  - 
+
+TY  - JOUR
+TI  - A Customizable Approach to Design Patterns Recognition Based on Feature Types
+T2  - Arabian Journal for Science and Engineering
+VL  - 39
+IS  - 12
+SP  - 8851
+EP  - 8873
+PY  - 2014
+DO  - 10.1007/s13369-014-1449-0
+AU  - Rasool, G.
+AU  - Mäder, P.
+AD  - COMSATS Institute of Information Technology, Lahore, Pakistan
+AD  - Software Systems/Process Informatics Group, Technische Universität Ilmenau, Ilmenau, Germany
+AB  - Accurate recognition of design patterns from source code supports development-related tasks such as program comprehension, maintenance, reverse engineering, and re-engineering. Researchers focused on this problem for many years, and a variety of recognition approaches have been proposed. Though, much progress has been made, we still identify a lack of flexibility and accuracy in the pattern recognition process. This paper evaluates different design pattern recovery approaches and examines the detection accuracy of these approaches. We found that the major impedance in the accurate recovery of design patterns is the large number of variations for implementing the same pattern. Furthermore, we realized that the combination of multiple searching techniques is required to improve accuracy of pattern detection. Based on these observations, we propose variable pattern definitions, which can be customized and improved towards a pattern catalog that detects patterns in all their variations. The customizable pattern definitions are created from reusable feature types. Each feature type can use one or more searching techniques for efficient detection. The proposed approach supports detection of patterns from multiple programming languages. A prototype implementation of the approach was tested on seven different open-source software projects. For each software project, a baseline was determined and the trustworthiness of each pattern–project combination was rated. The extracted results have been compared with established baselines and with the results of previous techniques. © 2014, King Fahd University of Petroleum and Minerals.
+KW  - Design motifs
+KW  - Design patterns
+KW  - Design recovery
+KW  - Micro-structures
+KW  - Pattern definitions
+N1  - Cited By :1
+N1  - Export Date: 19 October 2015
+DB  - Scopus
+UR  - http://www.scopus.com/inward/record.url?eid=2-s2.0-84916608126&partnerID=40&md5=9a7869c5d52d70f1a6b5ef5ee5967b00
+ER  - 
+
+TY  - CONF
+TI  - Detection of design pattern in class diagram using ontology
+T2  - 2014 International Computer Science and Engineering Conference, ICSEC 2014
+SP  - 97
+EP  - 102
+PY  - 2014
+DO  - 10.1109/ICSEC.2014.6978176
+AU  - Thongrak, M.
+AU  - Vatanawood, W.
+AD  - Department of Computer Engineering, Faculty of Engineering, Chulalongkorn University, Bangkok, Thailand
+AB  - The UML class diagram is used to show the structure of a particular system so that the designer can see the overview picture of the system. The design patterns help us solve the anticipated problems of the system design in the software process. It also helps guide the system design to be more flexible and scalable. However, the automatic detection of design patterns is useful as well in order to assess the expected patterns found in the design model. This paper proposes a tool for detecting design pattern in class diagram using ontologies. Our approach exploits the SQWRL rule created in the ontology to reason the structure of each particular design pattern. The number of target design pattern is reported and the related components of the pattern are located correctly. © 2014 IEEE.
+KW  - Class Diagram
+KW  - Design Pattern
+KW  - Ontology
+KW  - SQWRL
+N1  - Export Date: 19 October 2015
+DB  - Scopus
+C7  - 6978176
+UR  - http://www.scopus.com/inward/record.url?eid=2-s2.0-84942860348&partnerID=40&md5=63321da8dd66b4404a94a7a74e47ad46
+ER  - 
+
+TY  - JOUR
+TI  - Rule-based detection of design patterns in program code
+T2  - International Journal on Software Tools for Technology Transfer
+VL  - 16
+IS  - 3
+SP  - 315
+EP  - 334
+PY  - 2014
+DO  - 10.1007/s10009-013-0292-z
+AU  - Alnusair, A.
+AU  - Zhao, T.
+AU  - Yan, G.
+AD  - Indiana University, Kokomo, IN, 46904, United States
+AD  - University of Wisconsin-Milwaukee, Milwaukee, WI, 53201, United States
+AD  - University of Southern Indiana, Evansville, IN, 47712, United States
+AB  - The process of understanding and reusing software is often time-consuming, especially in legacy code and open-source libraries. While some core code of open-source libraries may be well-documented, it is frequently the case that open-source libraries lack informative API documentation and reliable design information. As a result, the source code itself is often the sole reliable source of information for program understanding activities. In this article, we propose a reverse-engineering approach that can provide assistance during the process of understanding software through the automatic recovery of hidden design patterns in software libraries. Specifically, we use ontology formalism to represent the conceptual knowledge of the source code and semantic rules to capture the structures and behaviors of the design patterns in the libraries. Several software libraries were examined with this approach and the evaluation results show that effective and flexible detection of design patterns can be achieved without using hard-coded heuristics. © 2013 Springer-Verlag Berlin Heidelberg.
+KW  - Design patterns
+KW  - Design recovery
+KW  - Knowledge representation
+KW  - Ontology formalisms
+KW  - Semantic inference
+KW  - Software maintenance
+N1  - Cited By :4
+N1  - Export Date: 19 October 2015
+DB  - Scopus
+UR  - http://www.scopus.com/inward/record.url?eid=2-s2.0-84901191663&partnerID=40&md5=3f76e783bfa71b7e289c945cdf1106d7
+ER  - 
+
+TY  - JOUR
+TI  - Using metric-based filtering to improve design pattern detection approaches
+T2  - Innovations in Systems and Software Engineering
+VL  - 11
+IS  - 1
+SP  - 39
+EP  - 53
+PY  - 2014
+DO  - 10.1007/s11334-014-0241-3
+AU  - Issaoui, I.
+AU  - Bouassida, N.
+AU  - Ben-Abdallah, H.
+AD  - University of Sfax, Sfax, Tunisia
+AD  - King Abdulaziz University, Jeddah, Saudi Arabia
+AB  - Design patterns represent high-level recurring abstractions that reflect the know-how of experts. Their detection is a key task in the context of software engineering; it is very useful in program comprehension, design recovery and also for re-documenting object-oriented systems. Despite their usefulness, current design pattern detection approaches have a high time complexity that hinders their application. This complexity is further aggravated with the absence of guiding principles in determining which pattern to look for first among the various patterns. To overcome this practical limit, we propose to optimize any pattern detection approach by foregoing it by a filtering phase that detects possible existence of patterns and that orders the candidate patterns in terms of their degree of resemblance to the analyzed design fragments. The herein proposed filtering approach exploits semantic and structural design metrics to look for the semantic and structural symptoms of design pattern instances. Its performance is experimentally demonstrated through our design pattern detection method MAPeD (Multi-phase Approach for Pattern Discovery) applied on the open source system JUnit. © 2014, Springer-Verlag London.
+KW  - Design patterns
+KW  - Filtering
+KW  - Object-oriented metrics
+KW  - Quality assurance
+N1  - Export Date: 19 October 2015
+DB  - Scopus
+UR  - http://www.scopus.com/inward/record.url?eid=2-s2.0-84925504132&partnerID=40&md5=65d36421681a891384d8e961cf53e02b
+ER  - 
+
+TY  - JOUR
+TI  - Categorization of fabric design using multi-class least-square support vector machine
+T2  - International Journal of Clothing Science and Technology
+VL  - 26
+IS  - 1
+SP  - 58
+EP  - 66
+PY  - 2014
+DO  - 10.1108/IJCST-05-2012-0024
+AU  - Ghosh, A.
+AU  - Guha, T.
+AU  - Bhar, R.
+AD  - Government College of Engineering and Textile Technology, Berhampore, India
+AD  - Jadavpur University, Kolkata, India
+AB  - Purpose: The purpose of this paper is to give an approach for categorization of diverse textile designs using their textural features as extracted from their gray images by means of multi-class least-square support vector machines (LS-SVM). Design/methodology/approach: In this work, the authors endeavor to devise a pattern recognition system based on LS-SVM which performs a multi-class categorization of three basic woven designs namely plain, twill and sateen after analyzing their features. Findings: The result establishes that LS-SVM is able to classify the fabric design with a reasonable degree of accuracy and it outperforms the standard SVM. Originality/value: The algorithmic simplicity of LS-SVM resulting from replacement of inequality constraints by equality ones and ability of handling noisy data by accommodating an error variable in its algorithm make it eminently suitable for textile pattern recognition. This paper offers a maiden application of LS-SVM in textile pattern recognition. © Emerald Group Publishing Limited.
+KW  - Features extraction
+KW  - Gray level concurrence matrix
+KW  - Least-square support vector machine
+KW  - Pattern classification
+KW  - Woven design
+N1  - Export Date: 19 October 2015
+DB  - Scopus
+UR  - http://www.scopus.com/inward/record.url?eid=2-s2.0-84896307775&partnerID=40&md5=e571bc5f1e57306ce21e68ab7b7beb97
+ER  - 
+
+TY  - CONF
+TI  - Anonymous camera for privacy protection
+T2  - Proceedings - International Conference on Pattern Recognition
+SP  - 4170
+EP  - 4175
+PY  - 2014
+DO  - 10.1109/ICPR.2014.715
+AU  - Zhang, Y.
+AU  - Lu, Y.
+AU  - Nagahara, H.
+AU  - Taniguchi, R.-I.
+AD  - Graduate of Information Science and Electrical Engineering, Kyushu University, Fukuoka, Japan
+AD  - School of Software, Beihang University, Beijing, China
+AB  - Privacy protection in the surveillance video data has received great attention. Although tremendous works have been proposed to provide effective privacy protection techniques, most of the algorithms are based on post-processing that deletes, obscures or encrypts the privacy information after privacy-included raw data are recorded. Consequently, they are vulnerable to raw data leak out, which may lead to unauthorized use. Therefore, it is imperative to develop a new privacy protection scheme which is capable of excluding any privacy information at the video recording phase. In this paper, we propose an anonymous camera aiming to protect the privacy of individuals at the video capturing phase by optical masking technique. It effectively reduces the risk of raw data leakage because no privacy information will be recorded by the camera. We implemented a prototype camera, which consists of an infrared camera, a RGB camera and a liquid crystal on silicon (LCoS) device. We introduce optical design and performance of the anonymous camera, the masking algorithm as well as the calibration methodology. Experimental results demonstrate that our prototype anonymous camera can perform accurate real time masking of the face for privacy protection. © 2014 IEEE.
+KW  - Computational photography
+KW  - Privacy protection
+KW  - Surveillance camera
+N1  - Export Date: 19 October 2015
+DB  - Scopus
+C7  - 6977427
+UR  - http://www.scopus.com/inward/record.url?eid=2-s2.0-84919922394&partnerID=40&md5=1eb9f0ba1a9570f7ee76d28fc5b6a3d4
+ER  - 
+
+TY  - JOUR
+TI  - Stability analysis and design of open-pit mine slope in china: A review
+T2  - Electronic Journal of Geotechnical Engineering
+VL  - 19
+IS  - Z2
+SP  - 10247
+EP  - 10266
+PY  - 2014
+AU  - Yang, Z.
+AU  - Gao, Q.
+AU  - Li, M.-h.
+AU  - Zhang, G.
+AD  - Key Laboratory of High Efficient Mining and Safety of Metal Mine Ministry of Education, University of Science and Technology Beijing, Beijing, China
+AD  - Jinchuan Group Co. Ltd., Jinchuang, Gansu, China
+AB  - Based on current researches and developments of open-pit mine slope in China, the engineering features of open-pit mine slopes are summarized. Mine slope is basically formed by dynamic excavation of multi-level and multi-type, and mining benefit is the purpose of mine slope engineering when using various schemes and/or methods. Thus, the issues of design and stability analyses are the main concerns in open-pit mine slope. Based on the experiences of a variety of projects, the development process of open-pit mine slope engineering in China can be divided into four phases: (1) experience-based analogical design; (2) design in combination of limit equilibrium analysis and experience; (3) quantitative analysis design; (4) dynamic design based on comprehensive analysis. In this regard, five key technologies of the mine slope stability analysis are proposed: (1) limit equilibrium analysis; (2) numerical simulations; (3) reliability analysis; (4) "3S" technology; (5) equivalent pattern recognition techniques. Finally, the difficulties and challenging issues in design and stability analysis of open-pit mine in China are presented accordingly. © 2014 ejge.
+KW  - Open-pit mine in china
+KW  - Prospect
+KW  - Research progress
+KW  - Slope stability analysis
+N1  - Export Date: 19 October 2015
+DB  - Scopus
+UR  - http://www.scopus.com/inward/record.url?eid=2-s2.0-84924610159&partnerID=40&md5=1c64594452d596923cdaa913ee8c592e
+ER  - 
+
+TY  - SER
+TI  - On the use of evolutionary programming for combinational logic circuits design
+T2  - Lecture Notes in Computer Science (including subseries Lecture Notes in Artificial Intelligence and Lecture Notes in Bioinformatics)
+VL  - 8827
+SP  - 191
+EP  - 198
+PY  - 2014
+AU  - Contreras-Cruz, M.A.
+AU  - Ayala-Ramirez, V.
+AU  - Alvarado-Velazco, P.B.
+AD  - Electronics Engineering Department, Universidad de Guanajuato, DICIS, Carr. Salamanca-Valle de Santiago, Km. 3.5+1.8, Salamanca, Mexico
+AB  -  In this paper, we propose a new methodology to solve the combinational logic circuit design problem by using evolutionary programming. We have implemented a set of evolutionary operators to evolve combinational circuits. Our method uses a set of examples described by their truth table, and it automatically generates a combinational logic function that represents this set. We test our system by using some examples from the literature, and also, we present a set of examples addressing more complex problems to validate the performance of our method. © Springer International Publishing Switzerland 2014.
+KW  - Automated circuit design
+KW  - Combinational logic
+KW  - Evolutionary programming
+N1  - Export Date: 19 October 2015
+DB  - Scopus
+UR  - http://www.scopus.com/inward/record.url?eid=2-s2.0-84921521494&partnerID=40&md5=7796eb42a9e1610ca8b0ae394d03215b
+ER  - 
+
