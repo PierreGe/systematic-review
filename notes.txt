@@ -1,0 +1,15 @@
+#Query scopus:
+( ( TITLE-ABS-KEY ( "design pattern" )  OR  TITLE-ABS-KEY ( "design motif" ) )  AND  ( TITLE-ABS-KEY ( detect* )  OR  TITLE-ABS-KEY ( identif* )  OR  TITLE-ABS-KEY ( recogni* ) ) )  AND  PUBYEAR  >  1998  AND  ( LIMIT-TO ( SUBJAREA ,  "COMP" )  OR  LIMIT-TO ( SUBJAREA ,  "ENGI" ) )  AND  ( LIMIT-TO ( DOCTYPE ,  "cp" )  OR  LIMIT-TO ( DOCTYPE ,  "ar" ) )  AND  ( LIMIT-TO ( EXACTKEYWORD ,  "Design Patterns" )  OR  LIMIT-TO ( EXACTKEYWORD ,  "Design patterns" ) )  AND  ( LIMIT-TO ( LANGUAGE ,  "English" ) )  AND  ( EXCLUDE ( SUBJAREA ,  "SOCI" )  OR  EXCLUDE ( SUBJAREA ,  "BIOC" ) )  AND  ( EXCLUDE ( SUBJAREA ,  "MATH" )  OR  EXCLUDE ( SUBJAREA ,  "DECI" )  OR  EXCLUDE ( SUBJAREA ,  "MATE" )  OR  EXCLUDE ( SUBJAREA ,  "PHYS" )  OR  EXCLUDE ( SUBJAREA ,  "BUSI" )  OR  EXCLUDE ( SUBJAREA ,  "EART" )  OR  EXCLUDE ( SUBJAREA ,  "ENVI" )  OR  EXCLUDE ( SUBJAREA ,  "MEDI" ) )  AND  ( EXCLUDE ( SUBJAREA ,  "AGRI" )  OR  EXCLUDE ( SUBJAREA ,  "NEUR" )  OR  EXCLUDE ( SUBJAREA ,  "PSYC" ) )  AND  ( EXCLUDE ( SRCTYPE ,  "k" )  OR  EXCLUDE ( SRCTYPE ,  "d" ) ) 
+
+#repartition
+
+[0;134]    pierre, alex
+[135;268]  pierre, badr
+[269;403] alex, badr
+
+# critère d'exclusion
+
+1. not in software engineering 
+2. not a full conference or research paper
+3. not about design pattern
+4. the main contribution of the paper is not about a detection method for design pattern
