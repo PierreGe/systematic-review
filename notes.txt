@@ -9,7 +9,7 @@
 
 # critère d'exclusion
 
-1. not in software engineering 
+1. not a contribution in software engineering (more than a use case of se) 
 2. not a full conference or research paper
-3. not about design pattern
+3. not about code-based design pattern
 4. the main contribution of the paper is not about a detection method for design pattern
