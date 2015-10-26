@@ -27,6 +27,11 @@ Alex
 Traîte clairement d'une méthode de détection de pattern basée sur des règles.
 Aucune raison de le rejetter.
 
+
+Pierre
+-----
+D'accord. En relisant je suis tout a fait d'accord.
+
 # 13
 Pierre: 4
 Alex: 1
@@ -286,6 +291,10 @@ Concerne la requête de structure du code à partir de diagramme UML.
 Est entre autre capable d'extraire des DPs. Je pense que c'est un
 article à conserver pour cette raison.
 
+Pierre
+-----
+D'accord, c'est bie un outil pour détecter les design pattern
+
 
 # 87
 Pierre: 3
@@ -350,6 +359,11 @@ Alex
 ----
 Taite de détection de structure (dont les DP) à l'interieur de programme.
 
+Pierre
+-----
+Pas d'accord. Plus la structure que les design pattern
+
+-> Un 3ème avis est requis
 
 # 105
 Pierre: v
@@ -404,6 +418,9 @@ Alex: v
 Alex
 ----
 Clairement de la détection de DP.
+
+Pierre
+-----
 
 
 # 125
