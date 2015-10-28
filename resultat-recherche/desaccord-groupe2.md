@@ -10,6 +10,11 @@ badr
 ----
  Ce n'est pas le cas : "In this context, we propose a tool for design pattern assistance that retrieves the adequate pattern from a repository of patterns. It identifies the correct design pattern and helps the designer in its instantiation"
 
+Pierre2
+----
+Ce qu'on cherche c'est code-> design pattern. 
+Ici cela permet idée -> design pattern -> code.
+Cela permet au developpeur de trouver un design pattern pour sa problématique.
 
 # 141
 Pierre: v
@@ -37,6 +42,10 @@ badr
 Ce n'est pas le cas l'objectif principale du travail c'est le "Design pattern recovery"; c'est vrai qu'ils disent 
 que : "Design pattern recovery approaches are assisted by different tools which recognize patterns from source code" mais 
 l'objectif principale est cité ici : "In this paper, we review existing design pattern recovery tools based on their available features and compare them regarding limitations of different tools." et je ne crois pas que ça parle principalement de détection de disign pattern.
+
+Pierre2
+----
+C'est un benchmarking des differents outils de detection (==recovery) de design pattern.
 
 # 162
 
@@ -71,6 +80,13 @@ badr
  A “spoiled pattern” is a pattern which allows to instantiate inadequate solutions for a given problem
  et l'article propose un outil pour la detection des spoiled pattern : "To help them, we propose models inspection in order to detect instantiations of spoiled pattern and models reworking through the use of the design patterns"
 
+Pierre2
+----
+Ce qu'on cherche c'est code-> design pattern. 
+Ici cela permet idée -> le bon design pattern (et pas un spoiled design pattern) -> code.
+Cela permet au developpeur de trouver le bon design pattern pour sa problématique.
+
+
 # 181
 
 Pierre: ??
@@ -94,6 +110,13 @@ Pas d'accord. Je vois pas ou ils parlent de detection.
 badr
 ----
 Là :  "In this paper we propose a visual notation supported by a software tool that may help to identify patterns that could satisfy a designer's goals"
+
+Pierre2
+----
+Ce qu'on cherche c'est code-> design pattern. 
+Ici cela permet objectif de design -> le bon design pattern -> code.
+Cela permet au developpeur de trouver le bon design pattern pour sa problématique.
+
 
 # 191
 
@@ -160,6 +183,10 @@ badr
 ----
 Je crois que ça parle de détection : "In this paper, we present an approach to automated verification of the compositions of security patterns by model checking"
 
+Pierre2
+----
+TODO
+
 # 208
 
 Pierre: v
@@ -224,6 +251,11 @@ badr
 ----
 L'objectif et d'extraire les design pattern des modèle mécanique, je crois qu'on pourrai le garder à discuter avec Mr houari.
 
+Pierre2
+----
+Si le "design pattern" est un boulon et un écrou, cela nous intéresse pas vraiment :-)
+voir solid modeling : https://en.wikipedia.org/wiki/Solid_modeling
+
 # 222
 
 Pierre: v
@@ -264,6 +296,10 @@ badr
 Je suis d'accord qu'il y'a une partie qui parle de ça, mais l'objectif principale de l'article est l'amélioration de la compréhension du programme
 et sa réutilisabilité en utilisant un algorithme de détection de dp: "In this paper, we present an approach for enhancing program understanding and reusability through a behavior+AC0-driven design pattern recovery process" 
 
+Pierre2
+----
+Un troisième avis serait le bienvenue je pense pour celui ci.
+
 # 256
 
 Pierre: v
@@ -291,6 +327,10 @@ badr
 -----
 Ce n'est pas le cas. C'est juste une comparaison entre les outils de détection disponnible sur le marché.
 
+Pierre2
+----
+Exact, c'est un benchmark des outils de detection de pattern.
+
 # 284
 
 Pierre: 4
@@ -307,3 +347,7 @@ badr
 Je crois que ça parle de détection : 1- "Our approach is to deploy predicate logic to specify conditions on the class diagrams that describe design patterns."
 
 2 - "This enables us not only to recognise design patterns in legacy code, but also to reason about them at the design stage, such as showing one pattern to be a special case of another."
+
+Pierre2
+----
+Selon moi "enables us" dans la phrase sous-entend "c'est possible de faire tout ça avec nos recherche, mais nous on l'a pas fait, a vous de le faire"
