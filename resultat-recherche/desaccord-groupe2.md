@@ -16,6 +16,10 @@ Ce qu'on cherche c'est code-> design pattern.
 Ici cela permet idée -> design pattern -> code.
 Cela permet au developpeur de trouver un design pattern pour sa problématique.
 
+badr2
+-----
+peut être c'est un peu du 50%/50% à mon avis, à discuter avec Mr houari. 
+
 # 141
 Pierre: v
 Badr: 4
@@ -46,6 +50,10 @@ l'objectif principale est cité ici : "In this paper, we review existing design 
 Pierre2
 ----
 C'est un benchmarking des differents outils de detection (==recovery) de design pattern.
+
+badr2
+-----
+c'est juste une comparaison ça parle pas de détéction, moi en tout cas je vois que cet article n'est pas à prendre, si t'as encore des doutes on a qu'à discuter avec Mr houari pour trancher.
 
 # 162
 
@@ -86,6 +94,10 @@ Ce qu'on cherche c'est code-> design pattern.
 Ici cela permet idée -> le bon design pattern (et pas un spoiled design pattern) -> code.
 Cela permet au developpeur de trouver le bon design pattern pour sa problématique.
 
+badr2
+-----
+Je ne suis plus sûr, un troisième avis sera le bienvenu.
+
 
 # 181
 
@@ -117,6 +129,9 @@ Ce qu'on cherche c'est code-> design pattern.
 Ici cela permet objectif de design -> le bon design pattern -> code.
 Cela permet au developpeur de trouver le bon design pattern pour sa problématique.
 
+badr2
+-----
+C'est de la détection c'est quoi la difference, je crois que cet article est pertinent.
 
 # 191
 
@@ -256,6 +271,11 @@ Pierre2
 Si le "design pattern" est un boulon et un écrou, cela nous intéresse pas vraiment :-)
 voir solid modeling : https://en.wikipedia.org/wiki/Solid_modeling
 
+badr2
+-----
+Je sais ce que c'est j'ai déjà eu ça comme cour, mais le point ici c'est que ça parle de detection de designe pattern, au même temps c'est pas 
+du software engineering à discuter avec Mr houari.
+
 # 222
 
 Pierre: v
@@ -351,3 +371,7 @@ Je crois que ça parle de détection : 1- "Our approach is to deploy predicate l
 Pierre2
 ----
 Selon moi "enables us" dans la phrase sous-entend "c'est possible de faire tout ça avec nos recherche, mais nous on l'a pas fait, a vous de le faire"
+
+badr2
+-----
+ce que je comprends moi c'est "d'après la citation 1 cela nous permet de detecter les dp" je suis pas sûr que ça veuille dire qu'ils l'on pas fait.
