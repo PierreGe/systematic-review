@@ -18,7 +18,7 @@ Cela permet au developpeur de trouver un design pattern pour sa problématique.
 
 badr2
 -----
-peut être c'est un peu du 50%/50% à mon avis, à discuter avec Mr houari. 
++1 
 
 # 141
 Pierre: v
@@ -131,7 +131,7 @@ Cela permet au developpeur de trouver le bon design pattern pour sa problématiq
 
 badr2
 -----
-C'est de la détection c'est quoi la difference, je crois que cet article est pertinent.
++1
 
 # 191
 
@@ -375,3 +375,4 @@ Selon moi "enables us" dans la phrase sous-entend "c'est possible de faire tout 
 badr2
 -----
 ce que je comprends moi c'est "d'après la citation 1 cela nous permet de detecter les dp" je suis pas sûr que ça veuille dire qu'ils l'on pas fait.
+Mr houari pourra trancher pour celui là!
