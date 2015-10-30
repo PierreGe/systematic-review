@@ -363,7 +363,7 @@ Pierre
 -----
 Pas d'accord. Plus la structure que les design pattern
 
--> Un 3ème avis est requis
+-> Un 3ème avis est  : soit on le garde quitte a l'eliminer plus tard
 
 # 105
 Pierre: v
@@ -422,6 +422,7 @@ Clairement de la détection de DP.
 Pierre
 -----
 
+-> Conf bidon mais ça parle clairement de DP detection
 
 # 125
 Pierre: 4
@@ -485,3 +486,5 @@ Alex
 ----
 Je croyais que c'était plus relié au semantic web, mais ça pourrait bien être un
 article à garder.
+
+-> tangent

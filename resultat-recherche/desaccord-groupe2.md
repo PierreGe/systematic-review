@@ -55,6 +55,10 @@ badr2
 -----
 c'est juste une comparaison ça parle pas de détéction, moi en tout cas je vois que cet article n'est pas à prendre, si t'as encore des doutes on a qu'à discuter avec Mr houari pour trancher.
 
+Pierre3
+----
+On a gardé ce genre d'article pour le groupe1 et discuté avec houari.
+
 # 162
 
 Pierre: v
@@ -98,6 +102,9 @@ badr2
 -----
 Je ne suis plus sûr, un troisième avis sera le bienvenu.
 
+Pierre3
+----
+Ok
 
 # 181
 
@@ -276,6 +283,10 @@ badr2
 Je sais ce que c'est j'ai déjà eu ça comme cour, mais le point ici c'est que ça parle de detection de designe pattern, au même temps c'est pas 
 du software engineering à discuter avec Mr houari.
 
+Pierre3
+----
+ok
+
 # 222
 
 Pierre: v
@@ -376,3 +387,8 @@ badr2
 -----
 ce que je comprends moi c'est "d'après la citation 1 cela nous permet de detecter les dp" je suis pas sûr que ça veuille dire qu'ils l'on pas fait.
 Mr houari pourra trancher pour celui là!
+
+Pierre3
+----
+ok
+
