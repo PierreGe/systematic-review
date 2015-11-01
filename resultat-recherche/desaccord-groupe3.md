@@ -25,6 +25,10 @@ badr
 Je crois que cet article parle de detection, 
 "In this paper, we present a web service (VisDP) for explicitly visualizing design patterns in UML diagrams".
 
+alex
+----
+Selon moi, la détection est différente de la visualisation.
+
 #363
 
 badr:v
@@ -34,4 +38,6 @@ badr
 ----
 Cet article parle clairement de detection !!
 
-
+alex
+----
+D'accord
