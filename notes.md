@@ -33,7 +33,7 @@
 
 * [2;135]   pierre, alex
     - 6 Désaccords
-    - 2 3e avis
+    - 3 3e avis
 * [136;269] pierre, badr
     - 22 Désaccords
     - 5 3e avis
@@ -62,28 +62,30 @@
 
 ---
 
+
+# Schéma de classification
+
+Excepté où il est noté «disjoint», il est possible d'assigner un article à plus d'une catégories.
+
+---
+
 # Schéma de classification
 
 ##Detection strategy based on
- * AI based
- * Machine learning based
-     - Supervised
-     - Unsupervised
+ * AI/ML based
  * Graph based
- * Logic based (inference on rules)
+ * Logic based (inference on rules, ontology)
  * Metric based
  * Automata based
- * Data mining based
  * Instrumentation based (trace included)
  * Pattern matching
- * Web semantic approach
  * Other
 
 ---
 
 # Schéma de classification
 
-##Language generality
+##Language generality (disjoint)
  * Language dependant
  * Language independant
 
@@ -91,7 +93,7 @@
 
 # Schéma de classification
 
-##Analysis type
+##Analysis type (disjoint)
  * Static
  * Dynamic
  * Hybrid
@@ -100,30 +102,39 @@
 
 # Schéma de classification
 
-##Detection Approach
- * Semantic
+##Validation method
+ * Benchmark
+ * Use case
+ * Experience
+ * Survey
+ * Other
+
+---
+
+# Schéma de classification
+
+##Detection Level (disjoint)
+ * Machine                [détails de bas niveau du programme]
+ * Source (code, token)   [Présence d'identifiant + détails de bas niveau du programme]
+ * Model (UML, formalism) [Présence d'identifiant]
+ * Other
+
+---
+
+# Schéma de classification
+
+##Detected pattern types
+ * Creationnal
  * Structural
+ * Behaviour
  * Other
+-
+ * Not specified
 
 ---
 
 # Schéma de classification
 
-##Detection Level
- * Source code
-     - Token
-     - AST
-     - Other
- * Model
-     - UML
-     - Other
- * Multi-level (?)
- * Other
-
----
-
-# Schéma de classification
-
-##Pattern detection generality
+##Pattern detection generality (disjoint)
  * Specific (method for a specific pattern)
  * Generic (general approach to pattern detection)
