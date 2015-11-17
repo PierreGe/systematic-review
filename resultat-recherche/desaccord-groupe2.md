@@ -106,6 +106,8 @@ Pierre3
 ----
 Ok
 
+-> Non
+
 # 181
 
 Pierre: ??
@@ -116,6 +118,8 @@ Pierre
 Je ne suis pas capable de classifier cet article. 
 
 -> Un troisième avis serait le bienvenue
+
+-> Non
 
 # 182
 
@@ -207,7 +211,9 @@ Je crois que ça parle de détection : "In this paper, we present an approach to
 
 Pierre2
 ----
-TODO
+3eme avis
+
+-> Non
 
 # 208
 
@@ -233,8 +239,9 @@ Pierre
 ----
 Je ne suis pas capable de classifier cet article. 
 En tout cas ça parle un peu de detection de design pattern.
+Un troisième avis serait le bienvenue
 
--> Un troisième avis serait le bienvenue
+-> Oui
 
 # 212
 
@@ -287,6 +294,8 @@ Pierre3
 ----
 ok
 
+-> Non
+
 # 222
 
 Pierre: v
@@ -309,8 +318,9 @@ Badr: v
 Pierre
 ----
 Je ne suis pas capable de classifier cet article. 
+Un troisième avis serait le bienvenue
 
--> Un troisième avis serait le bienvenue
+-> Non
 
 # 245
 
@@ -330,6 +340,8 @@ et sa réutilisabilité en utilisant un algorithme de détection de dp: "In this
 Pierre2
 ----
 Un troisième avis serait le bienvenue je pense pour celui ci.
+
+-> Oui
 
 # 256
 
@@ -362,6 +374,8 @@ Pierre2
 ----
 Exact, c'est un benchmark des outils de detection de pattern.
 
+-> Oui
+
 # 284
 
 Pierre: 4
@@ -391,4 +405,6 @@ Mr houari pourra trancher pour celui là!
 Pierre3
 ----
 ok
+
+-> Oui
 
