@@ -23,26 +23,21 @@ Excepté où il est noté «disjoint», il est possible d'assigner un article à
 
 ##Validation method
  * Benchmark
- * Use case
+ * Case Study
  * Experience
  * Survey
  * Other
 
-# Schéma de classification
-
 ##Detection Level (disjoint)
- * Machine                [détails de bas niveau du programme]
+ * Execution                [détails de bas niveau du programme]
  * Source (code, token)   [Présence d'identifiant + détails de bas niveau du programme]
  * Model (UML, formalism) [Présence d'identifiant]
- * Other
 
 ##Detected pattern types
  * Creationnal
  * Structural
  * Behaviour
- * Other
--
- * Not specified
+ * Other/Not specified
 
 ##Pattern detection generality (disjoint)
  * Specific (method for a specific pattern)
