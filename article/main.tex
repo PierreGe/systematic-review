@@ -112,29 +112,45 @@ The query resulted of a total of 403 articles. In those articles, we found two d
 
 After having queried the database, we exported results found and process to screening. 
 
-% par paire de deux et resolve conflict
+This process was done by pair. For each article, we check that the result was the same for each individual in the pair. In the case of difference, we first talk about it to find common ground, then if the conflict was not resolved, we asked a senior researcher for a final decision.
 
 The aim of screening is to select papers relevant to design pattern detection. For that purpose, we used an exclusion scheme containing four criteria :
 
 \begin{enumerate}
-	\item \textbf{Not a contribution in software engineering} : %explaination ,
+	\item \textbf{Not a contribution in software engineering} : this criteria also exclude articles that are not more than an use case of software engineering,
 	\item \textbf{Not a full conference or research paper},
-	\item \textbf{Not about software design pattern} : %explaination,
-	\item \textbf{The main contribution of the paper is not about detection of design pattern} : %explaination
+	\item \textbf{Not about software design pattern} : this criteria exclude articles where the main contribution is not about design pattern as defined in the Gang Of Four ,
+	\item \textbf{The main contribution of the paper is not about detection of design pattern}.
 \end{enumerate}
 
 If in article matched more than one criteria, we assigned the lowest criteria to him.
 
-% kappa de cohen
+We were three author to work on the screening, we therefore created three pair of author including on average 135 articles per pair.
+
+The inter-rater agreement cohen's kappa gave us the following result:
+% citation needed
+
+\begin{center}
+  \begin{tabular}{ | l | c | }
+    \hline
+    Group 1 & 0.88 \\ \hline
+    Group 2 & 0.66 \\ \hline
+    Group 3 & 0.91 \\
+    \hline
+  \end{tabular}
+\end{center}
+
+It is usually said that a cohen's kappa coefficient of more than 0.7 indicate a good agreeement.% citation needed
 
 \subsection{Classification scheme}
 
-% comment on l'a choisit
+To determine a relevant classification scheme we mainly used three things. The first was our general knowledge of the field on the subject and the matter ensuing. The second was the information extracted during the screening process that allowed us to identify the most important classification items. The last one was advices on which are the important point from a senior researcher who used to work on design pattern detection techniques.
 
+All of that leaded us to seven main categories.
 % explication pour chaque catégorie
 \begin{itemize}
-	\item \textbf{Detection strategy}
-	\item \textbf{Language generality}
+	\item \textbf{Detection strategy} : 
+	\item \textbf{Language generality} : This specifies if the detection is langage dependent or independent.
 	\item \textbf{Analysis type}
 	\item \textbf{Validation method}
 	\item \textbf{Detection Level}
