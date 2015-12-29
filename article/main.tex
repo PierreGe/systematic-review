@@ -78,30 +78,75 @@ Abstract goes here
 \section{INTRODUCTION}
 
 Introduction goes here
+% pourquoi la detection
+
+% pourquoi ce systematic mapping
 
 \section{SYSTEMATIC MAPPING PROCESS}
 
-\subsection{subsection1}
+In this section, we discuss step by step how we conducted our systematic mapping study. We have followed the process defined by Petersen et al \cite{c1}. 
 
-subsection
+\subsection{Research question}
+
+The main goal of this paper is to determine the quantity and trends of research in design pattern detection and the quality of proposed detection methods.
+\begin{itemize}
+	\item \textbf{RQ1} : How mature is research on the subject of design pattern detection ?
+	\item \textbf{RQ2} : What methods of design pattern detection are used ?
+\end{itemize}
+
+
+\subsection{Data source and queries}
+
+We decided to query only one database, Scopus \cite{c2}, that claimed to be the largest abstract and citation database of peer-reviewed literature. It indeed index the main Computer Science databases : Springer, IEEE, ACM and others. The main advantage of doing so is that one could easily export result of an important number of publication from Scopus.
+
+From the two research question we tried to maximise the number of publication found on the subject. To achieve that purpose we used for the query a disjonction of thesaurus for detection on their respective contracted form : detect*, recogni* and ident*. We have then added to the query a disjonction of pattern and motif.
+We have limited the query to the abstract, the title, and keywords of each article.
+
+We have limited our research to the year between 2000 and 2015 included. 
+
+We have also limited our research to the field of computer science and engineering.
+
+The query resulted of a total of 403 articles. In those articles, we found two duplicates that we have immediately removed from the result.
+
+\subsection{Screening}
+
+After having queried the database, we exported results found and process to screening. 
+
+% par paire de deux et resolve conflict
+
+The aim of screening is to select papers relevant to design pattern detection. For that purpose, we used an exclusion scheme containing four criteria :
+
+\begin{enumerate}
+	\item \textbf{Not a contribution in software engineering} : %explaination ,
+	\item \textbf{Not a full conference or research paper},
+	\item \textbf{Not about software design pattern} : %explaination,
+	\item \textbf{The main contribution of the paper is not about detection of design pattern} : %explaination
+\end{enumerate}
+
+If in article matched more than one criteria, we assigned the lowest criteria to him.
+
+% kappa de cohen
+
+\subsection{Classification scheme}
+
+% comment on l'a choisit
+
+% explication pour chaque catégorie
+\begin{itemize}
+	\item \textbf{Detection strategy}
+	\item \textbf{Language generality}
+	\item \textbf{Analysis type}
+	\item \textbf{Validation method}
+	\item \textbf{Detection Level}
+	\item \textbf{Detected pattern types}
+	\item \textbf{Pattern detection generality}
+\end{itemize}
+
+
+\subsection{Systematic map}
 
 \section{SELECTION PROCESS RESULT}
 
-selection process goes here
-
-
-Exemple d'image
-
-   \begin{figure}[thpb]
-      \centering
-      \framebox{\parbox{3in}{We suggest that you use a text box to insert a graphic (which is ideally a 300 dpi TIFF or EPS file, with all fonts embedded) because, in an document, this method is somewhat more stable than directly inserting a picture.
-}}
-      %\includegraphics[scale=1.0]{figurefile}
-      \caption{Inductance of oscillation winding on amorphous
-       magnetic core versus DC bias magnetic field}
-      \label{figurelabel}
-   \end{figure}
-   
 
 \section{CONCLUSIONS}
 
@@ -138,10 +183,9 @@ Acknowledgement
 
 \begin{thebibliography}{99}
 
-\bibitem{c1} G. O. Young, ÒSynthetic structure of industrial plastics (Book style with paper title and editor),Ó 	in Plastics, 2nd ed. vol. 3, J. Peters, Ed.  New York: McGraw-Hill, 1964, pp. 15Ð64.
-\bibitem{c2} W.-K. Chen, Linear Networks and Systems (Book style).	Belmont, CA: Wadsworth, 1993, pp. 123Ð135.
-\bibitem{c3} H. Poor, An Introduction to Signal Detection and Estimation.   New York: Springer-Verlag, 1985, ch. 4.
-\bibitem{c4} B. Smith, ÒAn approach to graphs of linear forms (Unpublished work style),Ó unpublished.
+\bibitem{c1} K. Petersen, R. Feldt, S. Mujtaba, and M. Mattsson, “Systematic mapping studies in software engineering,” in Proc. of the 12th Int. Conf. on Eval. and Asses. in Soft. Eng., ser. EASE’08. Swinton, UK, UK: British Computer Society, 2008.
+
+\bibitem{c2} www.scopus.com
 
 
 
