@@ -20,6 +20,7 @@
 %\usepackage{graphics} % for pdf, bitmapped graphics files
 \usepackage{graphicx} % for png files
 \graphicspath{{img/}}
+\usepackage{multirow}
 %\usepackage{epsfig} % for postscript graphics files
 %\usepackage{mathptmx} % assumes new font selection scheme installed
 %\usepackage{times} % assumes new font selection scheme installed
@@ -88,18 +89,30 @@ Maecenas feugiat augue purus, id interdum tellus sagittis at. Donec a orci sem. 
 
 % Design patterns are a 
 
-Design partterns are best pratice to recurring problems proposed by the Gang
-of Four in their seminal book.
+Design partterns are best pratices proposed by the Gang of Four in their seminal
+book to recurring design problems.
 
-(Some study author) have been able to show that the presence of design patterns
-can help one better understand a piece of software.
+(Some study author) have been able to show that the presence of design patterns,
+if correctly presented, can help one better understand a piece of software
+[citation needed].
+It is therefore desirable to be able to automatically extract those design
+and present them in a digestible format.
 
 Detection of design patterns in software has been a relatively active research
 interest of the past decade in software engineering.
 Proposed methods of automatic detection aims in part to facilitate the work of
 developpers in understanding a piece of software through reverse engineering.
 
-However, no studies have been conducted to analyse the trends of the field.
+However, design pattern detection tools are still not featured in the typical
+programmer toolbox.
+
+No studies have been conducted to analyse the trends of the field.
+
+This paper presents a systematic mapping study on design pattern detection
+methods.
+It is organized as follows: 
+ The first section explains the systematic mapping process
+ The second section analyses
 
 % pourquoi la detection
 
@@ -165,7 +178,7 @@ screening to 401.
 
 \subsection{Screening}
 
-% Problem with that sentence
+% Problem with that sentence: "and process"?  Maybe "proceeded" 
 After having queried the database, we exported the results found and process to
 screening. 
 
@@ -206,6 +219,7 @@ The inter-rater agreement Cohen's kappa gave us the following result:
 \begin{center}
   \begin{tabular}{ lcc }
     \bf Group & \bf \# of articles & \bf Cohen's kappa \\
+    \hline {}
     1 & ??? & 0.88 \\
     2 & ??? & 0.66 \\
     3 & ??? & 0.91 \\
@@ -228,41 +242,41 @@ researcher who used to work on design pattern detection techniques.
 All of that leaded us to seven main categories.
 
 \begin{itemize}
-  \item Detection strategy:
+  \item \textbf{Detection strategy}:
     This determine the means on which the detection is based.
     Possible values: Artificial intelligence, Logic/Formalisation, Graph,
     Metric, Automata, Instrumentation/profiling and Others.
 
-  \item Language dependance
+  \item \textbf{Language dependance}:
     This category aims to classify detection methods on wether it is dependant
     on the language or not. 
     Possible values: Dependant or Independant
 % This  specifies if the detection is langage dependent or independent,
 
-  \item Analysis type
+  \item \textbf{Analysis type}:
     This determine if a detection techniques use a static, dynamic or hybrid
     approach.
     Possible values: Static, Dynamic and Hybrid.
 
-  \item Validation method:
+  \item \textbf{Validation method}:
     This specifies the type of scientific validation methods the article's 
     authors used for a detection method.
     Possible values: Benchmark, Case study, Experiment, Survey, Other and
     None.
     
-  \item{Detection Level}
+  \item \textbf{Detection Level}
     This define on which level the detection method work : execution, source
     and model.
     It could be more than one level for a single method of detection.
     Possible values: Execution, Source and Model.
 
-  \item Detected pattern types :
+  \item \textbf{Detected pattern types}:
     This characterizes the type of design pattern a specific detection method
     can manage.
     The possible values for this category are Creationnal, Behavioural,
     Structural and Not specified.
 
-  \item Pattern detection generality :
+  \item \textbf{Pattern detection generality}:
     This determine if a method is made to detect a single pattern or more than
     one pattern.
     Possible values: Specific, General.
@@ -272,38 +286,112 @@ All of that leaded us to seven main categories.
 
 % Need result table
 
+%todo
 
-\subsubsection{Year distribution}
+\section{SELECTION PROCESS RESULTS}
+
+DATA
+
+
+\section{STUDY RESULTS}
+
+\begin{center}
+  \begin{tabular}{ lll }
+    \bf Category & \bf Class & \bf \# of articles \\
+    \hline
+    \multirow{7}{*}{Detection Srategy}
+    & \multicolumn{1}{l}{AI}           & \multicolumn{1}{l}{11} \\
+    & \multicolumn{1}{l}{Logic}        & \multicolumn{1}{l}{22} \\
+    & \multicolumn{1}{l}{Graph}        & \multicolumn{1}{l}{15} \\
+    & \multicolumn{1}{l}{Metric}       & \multicolumn{1}{l}{7} \\
+    & \multicolumn{1}{l}{Automata}     & \multicolumn{1}{l}{1} \\
+    & \multicolumn{1}{l}{Instr./Prof.} & \multicolumn{1}{l}{10} \\
+    & \multicolumn{1}{l}{Pattern Mathching}
+                                       & \multicolumn{1}{l}{8} \\
+    & \multicolumn{1}{l}{Others}       & \multicolumn{1}{l}{23} \\
+    \hline
+    \multirow{2}{*}{\textbf{Language Dependance}}
+    & \multicolumn{1}{l}{Dependant}    & \multicolumn{1}{l}{XXX} \\
+    & \multicolumn{1}{l}{Independant}  & \multicolumn{1}{l}{XXX} \\
+    \hline
+    \multirow{3}{*}{\textbf{Analysis Type}}
+    & \multicolumn{1}{l}{Static}       & \multicolumn{1}{l}{XXX} \\
+    & \multicolumn{1}{l}{Dynamic}      & \multicolumn{1}{l}{XXX} \\
+    & \multicolumn{1}{l}{Hybrid}       & \multicolumn{1}{l}{XXX} \\
+    \hline
+    multirow{3}{*}{Detection Level}
+    & \multicolumn{1}{l}{Execution}    & \multicolumn{1}{l}{8} \\
+    & \multicolumn{1}{l}{Source}       & \multicolumn{1}{l}{44} \\
+    & \multicolumn{1}{l}{Model}        & \multicolumn{1}{l}{7} \\
+    \hline
+    \multirow{2}{*}{Pattern detection generality}
+    & \multicolumn{1}{l}{Specific}     & \multicolumn{1}{l}{XXX} \\
+    & \multicolumn{1}{l}{General}      & \multicolumn{1}{l}{XXX} \\
+    \hline
+    \multirow{4}{*}{Detected Pattern Types}
+    & \multicolumn{1}{l}{Creationnal}  & \multicolumn{1}{l}{23} \\
+    & \multicolumn{1}{l}{Structural}   & \multicolumn{1}{l}{34} \\
+    & \multicolumn{1}{l}{Behaviour}    & \multicolumn{1}{l}{49} \\
+    & \multicolumn{1}{l}{Other/Not Specified}
+                                       & \multicolumn{1}{l}{17} \\
+    \hline
+    \multirow{6}{*}{Validation Method}
+    & \multicolumn{1}{l}{Benchmark}    & \multicolumn{1}{l}{7} \\
+    & \multicolumn{1}{l}{Case Study}   & \multicolumn{1}{l}{40} \\
+    & \multicolumn{1}{l}{Experiment}   & \multicolumn{1}{l}{8} \\
+    & \multicolumn{1}{l}{Survey}       & \multicolumn{1}{l}{0} \\
+    & \multicolumn{1}{l}{Other}        & \multicolumn{1}{l}{1} \\
+    & \multicolumn{1}{l}{None}         & \multicolumn{1}{l}{11}
+  \end{tabular}
+\end{center}
+
+\subsection{Yearly distribution}
 % Need to change the title for this graphic
+
+The yearly distribution gives us an interesting picture of the field.
+Interest in design patterns detection technique started in the early
+2000 and that interest is fading away since 2010.
+
+This could indicate either that the field is mature and that research avenues
+have been exhaused, that the field currently hit a roadblock, or that interest
+is fading due to a lack of interest in the need for design pattern detection
+tools.
 
 \begin{center}
 \includegraphics[scale=0.75]{articles_by_years.png}
 \end{center}
 
 
-\subsubsection{Venue Distribution}
+\subsection{Publication Venue Distribution}
 % Need a graphic for article by publishers.
 
 
-\subsubsection{Detection Strategy}
+\subsection{Detection Strategy}
+
+Most of the detection strategies used fall either in the 
+\textit{logic/formalisation} or \textit{other} class.
+The first one was probably overly broad since it included any solution using
+inference rules engines, formalisation and semantic web ontologies.
+Surprisingly, the latter strategy was the focus of many articles. 
 
 
-\begin{center}
-\includegraphics[scale=0.75]{detection_strategy.png}
-\end{center}
+%\begin{center}
+%\includegraphics[scale=0.75]{detection_strategy.png}
+%\end{center}
 
 
-\subsubsection{Analysis Type}
+\subsection{Analysis Type}
 
 Design pattern detection can be done either statically or dynamically.
 
 
-\begin{center}
-\includegraphics[scale=0.75]{analysis_type.png}
-\end{center}
+
+%\begin{center}
+%\includegraphics[scale=0.75]{analysis_type.png}
+%\end{center}
 
 
-\subsubsection{Detected Pattern Types}
+\subsection{Detected Pattern Types}
 
 The Gang of Four identified three design pattern types: creationnal,
 behavioural and structural patterns.
@@ -315,65 +403,56 @@ associated with each pattern types.
 However, we can see that the detection of behavioural patterns has been the
 subject of more articles than the two others.
 
-\begin{center}
-  \includegraphics[scale=0.65]{pattern_types.png}
-\end{center}
+%\begin{center}
+%  \includegraphics[scale=0.65]{pattern_types.png}
+%\end{center}
 
 This can be explained either by the fact that structural design patterns
 detection is considered as an easy problem, thus less likely to be the main
-focus of a research papers or by the possibility is that behavioural design
+focus of a research paper or by the possibility is that behavioural design
 patterns are in fact easier to detect than structural ones.
 However, we believe the first possibilty to be more likely.
 
 
 
-\subsubsection{Language dependance}
-
-\begin{center}
-\includegraphics[scale=0.75]{language_generality.png}
-\end{center}
+\subsection{Language dependance}
 
 
-\subsubsection{Detection Level}
 
-\begin{center}
-\includegraphics[scale=0.75]{detection_level.png}
-\end{center}
-
-
-\subsubsection{Detection generality}
-
-\begin{center}
-\includegraphics[scale=0.75]{detection_generality.png}
-\end{center}
+%\begin{center}
+%\includegraphics[scale=0.75]{language_generality.png}
+%\end{center}
 
 
-\subsubsection{Validation Methods}
+\subsection{Detection Level}
 
-\begin{center}
-\includegraphics[scale=0.75]{validation_method.png}
-\end{center}
+%\begin{center}
+%\includegraphics[scale=0.75]{detection_level.png}
+%\end{center}
 
 
-\subsubsection{Detected pattern types according to analysis type}
+\subsection{Detection generality}
+
+This category was used to expose specific pattern detection methods.
+Most papers present a general way to detect design patterns.
+
+
+%\begin{center}
+%\includegraphics[scale=0.75]{detection_generality.png}
+%\end{center}
+
+
+\subsection{Validation Methods}
+
+%\begin{center}
+%\includegraphics[scale=0.75]{validation_method.png}
+%\end{center}
+
+
+\subsection{Detected pattern types according to analysis type}
 % Need graphics
 
 
-
-
-
-
-
-
-
-
-
-
-%todo
-
-\section{SELECTION PROCESS RESULT}
-
-DATA
 
 \section{Study limitations}
 
