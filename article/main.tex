@@ -88,7 +88,7 @@ The result help us understand how those techniques work and which type of patter
 
 % Design patterns are a 
 
-Design partterns are best pratices proposed by the Gang of Four in their seminal
+Design patterns are best practices proposed by the Gang of Four in their seminal
 book to recurring design problems.
 
 (Some study author) have been able to show that the presence of design patterns,
@@ -100,12 +100,12 @@ and present them in a digestible format.
 Detection of design patterns in software has been a relatively active research
 interest of the past decade in software engineering.
 Proposed methods of automatic detection aims in part to facilitate the work of
-developpers in understanding a piece of software through reverse engineering.
+developers in understanding a piece of software through reverse engineering.
 
 However, design pattern detection tools are still not featured in the typical
 programmer toolbox.
 
-No studies have been conducted to analyse the trends of the field.
+No studies have been conducted to analyze the trends of the field.
 
 This paper presents a systematic mapping study on design pattern detection
 methods.
@@ -143,24 +143,24 @@ We decided to query only one database, Scopus \cite{c2}, that claims to be the
 largest abstract and citation database of peer-reviewed literature.
 It indexes the main Computer Science databases : Springer, IEEE, ACM and
 others.
-The main advantage of using Scopus is that it provides a functionnality to
+The main advantage of using Scopus is that it provides a functionality to
 export the result of a search query on its database.
 Some of those exported results would not have been easily obtainable on some
-publishers search engines that do not provide an export functionnality.
+publishers search engines that do not provide an export functionality.
 Consequently, Scopus was used mostly as a Search and Export portal over the
 relevant publications, greatly reducing the effort needed to extract the
 original articles set. 
 % TODO: Original articles set <- better wording?!
 
-From the two research questions we tried to maximise the number of publications
+From the two research questions we tried to maximize the number of publications
 found on the subject.
 % Thesaurus is a synonym dictionnary... therefore a "disjunction of thesaurus"
 % doesn't make any sense.
-To achieve that purpose we used for the query a disjonction of thesaurus for
+To achieve that purpose we used for the query a disjunction of thesaurus for
 \textit{detection} on their respective contracted form : \textit{detect*},
 \textit{recogni*} and \textit{ident*}.
-We have then added to the query a disjonction of \textit{pattern} and \textit{motif}.
-The query was limitied to the abstract, the title, and keywords of each article.
+We have then added to the query a disjunction of \textit{pattern} and \textit{motif}.
+The query was limited to the abstract, the title, and keywords of each article.
 % Do we like oxford comma?
 
 To limit the scope of our research only the articles published between the years
@@ -172,7 +172,7 @@ engineering.
 
 The query resulted in a total of 403 articles.
 Of those articles, we found two duplicates that were immediately removed from
-the set of articles to analyse which brings down the number of articles for
+the set of articles to analyze which brings down the number of articles for
 screening to 401.
 
 \subsection{Screening}
@@ -226,7 +226,7 @@ The inter-rater agreement Cohen's kappa gave us the following result:
 \end{center}
 
 It is usually said that a Cohen's kappa coefficient of more than $0.7$ indicate
-a good agreeement.% citation needed
+a good agreement.% citation needed
 
 \subsection{Classification scheme}
 
@@ -243,13 +243,13 @@ All of that leaded us to seven main categories.
 \begin{itemize}
   \item \textbf{Detection strategy}:
     This determine the means on which the detection is based.
-    Possible values: Artificial intelligence, Logic/Formalisation, Graph,
+    Possible values: Artificial intelligence, Logic/Formalization, Graph,
     Metric, Automata, Instrumentation/profiling and Others.
 
-  \item \textbf{Language dependance}:
-    This category aims to classify detection methods on wether it is dependant
+  \item \textbf{Language dependence}:
+    This category aims to classify detection methods on whether it is dependent
     on the language or not. 
-    Possible values: Dependant or Independant
+    Possible values: Dependant or Independent
 % This  specifies if the detection is langage dependent or independent,
 
   \item \textbf{Analysis type}:
@@ -272,7 +272,7 @@ All of that leaded us to seven main categories.
   \item \textbf{Detected pattern types}:
     This characterizes the type of design pattern a specific detection method
     can manage.
-    The possible values for this category are Creationnal, Behavioural,
+    The possible values for this category are Creational, Behavioral,
     Structural and Not specified.
 
   \item \textbf{Pattern detection generality}:
@@ -297,20 +297,20 @@ DATA
   \begin{tabular}{ lll }
     \bf Category & \bf Class & \bf \# of articles \\
     \hline
-    \multirow{7}{*}{Detection Srategy}
+    \multirow{7}{*}{Detection Strategy}
     & \multicolumn{1}{l}{AI}           & \multicolumn{1}{l}{11} \\
     & \multicolumn{1}{l}{Logic}        & \multicolumn{1}{l}{22} \\
     & \multicolumn{1}{l}{Graph}        & \multicolumn{1}{l}{15} \\
     & \multicolumn{1}{l}{Metric}       & \multicolumn{1}{l}{7} \\
     & \multicolumn{1}{l}{Automata}     & \multicolumn{1}{l}{1} \\
     & \multicolumn{1}{l}{Instr./Prof.} & \multicolumn{1}{l}{10} \\
-    & \multicolumn{1}{l}{Pattern Mathching}
+    & \multicolumn{1}{l}{Pattern Matching}
                                        & \multicolumn{1}{l}{8} \\
     & \multicolumn{1}{l}{Others}       & \multicolumn{1}{l}{23} \\
     \hline
-    \multirow{2}{*}{\textbf{Language Dependance}}
+    \multirow{2}{*}{\textbf{Language Dependence}}
     & \multicolumn{1}{l}{Dependant}    & \multicolumn{1}{l}{XXX} \\
-    & \multicolumn{1}{l}{Independant}  & \multicolumn{1}{l}{XXX} \\
+    & \multicolumn{1}{l}{Independent}  & \multicolumn{1}{l}{XXX} \\
     \hline
     \multirow{3}{*}{\textbf{Analysis Type}}
     & \multicolumn{1}{l}{Static}       & \multicolumn{1}{l}{XXX} \\
@@ -327,9 +327,9 @@ DATA
     & \multicolumn{1}{l}{General}      & \multicolumn{1}{l}{XXX} \\
     \hline
     \multirow{4}{*}{Detected Pattern Types}
-    & \multicolumn{1}{l}{Creationnal}  & \multicolumn{1}{l}{23} \\
+    & \multicolumn{1}{l}{Creational}  & \multicolumn{1}{l}{23} \\
     & \multicolumn{1}{l}{Structural}   & \multicolumn{1}{l}{34} \\
-    & \multicolumn{1}{l}{Behaviour}    & \multicolumn{1}{l}{49} \\
+    & \multicolumn{1}{l}{Behavior}    & \multicolumn{1}{l}{49} \\
     & \multicolumn{1}{l}{Other/Not Specified}
                                        & \multicolumn{1}{l}{17} \\
     \hline
@@ -351,7 +351,7 @@ Interest in design patterns detection technique started in the early
 2000 and that interest is fading away since 2010.
 
 This could indicate either that the field is mature and that research avenues
-have been exhaused, that the field currently hit a roadblock, or that interest
+has been satisfied, that the field currently hit a roadblock, or that interest
 is fading due to a lack of interest in the need for design pattern detection
 tools.
 
@@ -367,9 +367,9 @@ tools.
 \subsection{Detection Strategy}
 
 Most of the detection strategies used fall either in the 
-\textit{logic/formalisation} or \textit{other} class.
+\textit{logic/formalization} or \textit{other} class.
 The first one was probably overly broad since it included any solution using
-inference rules engines, formalisation and semantic web ontologies.
+inference rules engines, formalization and semantic web ontologies.
 Surprisingly, the latter strategy was the focus of many articles. 
 
 
@@ -391,14 +391,14 @@ Design pattern detection can be done either statically or dynamically.
 
 \subsection{Detected Pattern Types}
 
-The Gang of Four identified three design pattern types: creationnal,
-behavioural and structural patterns.
-Due to the nature of each pattern types, it is usally aknowledged that
-structural patterns should be easier to detect than behavioural patterns and
-that the later are easier than creationnal patterns (citation needed). 
+The Gang of Four identified three design pattern types: creational,
+behavioral and structural patterns.
+Due to the nature of each pattern types, it is usually acknowledged that
+structural patterns should be easier to detect than behavioral patterns and
+that the later are easier than creational patterns (citation needed). 
 It was expected that this ordering would appear in the number of articles
 associated with each pattern types. 
-However, we can see that the detection of behavioural patterns has been the
+However, we can see that the detection of behavioral patterns has been the
 subject of more articles than the two others.
 
 %\begin{center}
@@ -407,14 +407,14 @@ subject of more articles than the two others.
 
 This can be explained either by the fact that structural design patterns
 detection is considered as an easy problem, thus less likely to be the main
-focus of a research paper or by the possibility is that behavioural design
+focus of a research paper or by the possibility is that behavioral design
 patterns are in fact easier to detect than structural ones.
-However, we believe the first possibilty to be more likely.
+However, we believe the first possibility to be more likely.
 
 
 
-\subsection{Language dependance}
-The majority of techniques are language dependant and the most used 
+\subsection{Language dependence}
+The majority of techniques are language dependent and the most used 
 languages are Java and C++
 
 But those detection methods can be easily converted to other languages
@@ -545,7 +545,7 @@ Appendixes should appear before the acknowledgment.
 
 \section*{ACKNOWLEDGMENT}
 
-Acknowledgement
+Acknowledgment
 
 
 \begin{thebibliography}{99}
