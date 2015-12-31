@@ -48,7 +48,7 @@ Detection of design pattern : A systematic mapping study}
 \author{Pierre Gerard, Alexandre St-Louis Fortier, Badr Mai and Houari Sahraoui \\
 Département IRO \\
 Université de Montréal, Montreal, Canada \\
-\{gerardpi,stlouial,sahraouh\}@iro.umontreal.ca
+\{gerardpi,stlouial,badr.mai,sahraouh\}@iro.umontreal.ca
 % <-this % stops a space
 %\thanks{*This work was not supported by any organization}% <-this % stops a space
 %\thanks{$^{1}$H. Kwakernaak is with Faculty of Electrical Engineering, Mathematics and Computer Science,
@@ -73,7 +73,7 @@ Université de Montréal, Montreal, Canada \\
 \begin{abstract}
 
 % Place holder
-Design patterns are important because they help solving recurring design problems in software engineering. The identification of those patterns can be helpful to maintain and understand the code especially in large systems. Interest in design patterns detection has grown in the last decade.Despite the huge interest given to design patterns detection, there is no reliable or formal method for this matter.
+Design patterns are important because they help solving recurring design problems in software engineering. The identification of those patterns can be helpful to maintain and understand the code especially in large systems. Interest in design patterns detection has grown in the last decade. Despite the huge interest given to design patterns detection, there is no reliable or formal method for this matter.
 We conducted a systematic mapping study on design patterns detection by querying multiple sources to get articles that are relevant to our study. 403 articles between 2000 and 2015 were considered.
 The main purpose of the study is to know which methods and techniques are used to detect design patterns.
 The result help us understand how those techniques work and which type of pattern is detected the most.
@@ -219,9 +219,9 @@ The inter-rater agreement Cohen's kappa gave us the following result:
   \begin{tabular}{ lcc }
     \bf Group & \bf \# of articles & \bf Cohen's kappa \\
     \hline {}
-    1 & ??? & 0.88 \\
-    2 & ??? & 0.66 \\
-    3 & ??? & 0.91 \\
+    1 & 133 & 0.88 \\
+    2 & 133 & 0.66 \\
+    3 & 134 & 0.91 \\
   \end{tabular}
 \end{center}
 
@@ -297,7 +297,7 @@ DATA
   \begin{tabular}{ lll }
     \bf Category & \bf Class & \bf \# of articles \\
     \hline
-    \multirow{7}{*}{Detection Strategy}
+    \multirow{7}{*}{\textbf{Detection Strategy}}
     & \multicolumn{1}{l}{AI}           & \multicolumn{1}{l}{11} \\
     & \multicolumn{1}{l}{Logic}        & \multicolumn{1}{l}{22} \\
     & \multicolumn{1}{l}{Graph}        & \multicolumn{1}{l}{15} \\
@@ -309,31 +309,31 @@ DATA
     & \multicolumn{1}{l}{Others}       & \multicolumn{1}{l}{23} \\
     \hline
     \multirow{2}{*}{\textbf{Language Dependence}}
-    & \multicolumn{1}{l}{Dependant}    & \multicolumn{1}{l}{XXX} \\
-    & \multicolumn{1}{l}{Independent}  & \multicolumn{1}{l}{XXX} \\
+    & \multicolumn{1}{l}{Dependant}    & \multicolumn{1}{l}{40} \\
+    & \multicolumn{1}{l}{Independent}  & \multicolumn{1}{l}{20} \\
     \hline
     \multirow{3}{*}{\textbf{Analysis Type}}
     & \multicolumn{1}{l}{Static}       & \multicolumn{1}{l}{XXX} \\
     & \multicolumn{1}{l}{Dynamic}      & \multicolumn{1}{l}{XXX} \\
     & \multicolumn{1}{l}{Hybrid}       & \multicolumn{1}{l}{XXX} \\
     \hline
-    multirow{3}{*}{Detection Level}
+    \multirow{3}{*}{\textbf{Detection Level}}
     & \multicolumn{1}{l}{Execution}    & \multicolumn{1}{l}{8} \\
     & \multicolumn{1}{l}{Source}       & \multicolumn{1}{l}{44} \\
     & \multicolumn{1}{l}{Model}        & \multicolumn{1}{l}{7} \\
     \hline
-    \multirow{2}{*}{Pattern detection generality}
+    \multirow{2}{*}{\textbf{Pattern detection generality}}
     & \multicolumn{1}{l}{Specific}     & \multicolumn{1}{l}{XXX} \\
     & \multicolumn{1}{l}{General}      & \multicolumn{1}{l}{XXX} \\
     \hline
-    \multirow{4}{*}{Detected Pattern Types}
+    \multirow{4}{*}{\textbf{Detected Pattern Types}}
     & \multicolumn{1}{l}{Creational}  & \multicolumn{1}{l}{23} \\
     & \multicolumn{1}{l}{Structural}   & \multicolumn{1}{l}{34} \\
     & \multicolumn{1}{l}{Behavior}    & \multicolumn{1}{l}{49} \\
     & \multicolumn{1}{l}{Other/Not Specified}
                                        & \multicolumn{1}{l}{17} \\
     \hline
-    \multirow{6}{*}{Validation Method}
+    \multirow{6}{*}{\textbf{Validation Method}}
     & \multicolumn{1}{l}{Benchmark}    & \multicolumn{1}{l}{7} \\
     & \multicolumn{1}{l}{Case Study}   & \multicolumn{1}{l}{40} \\
     & \multicolumn{1}{l}{Experiment}   & \multicolumn{1}{l}{8} \\
@@ -401,9 +401,9 @@ associated with each pattern types.
 However, we can see that the detection of behavioral patterns has been the
 subject of more articles than the two others.
 
-%\begin{center}
-%  \includegraphics[scale=0.65]{pattern_types.png}
-%\end{center}
+\begin{center}
+  \includegraphics[scale=0.65]{pattern_types.png}
+\end{center}
 
 This can be explained either by the fact that structural design patterns
 detection is considered as an easy problem, thus less likely to be the main
@@ -415,23 +415,20 @@ However, we believe the first possibility to be more likely.
 
 \subsection{Language dependence}
 The majority of techniques are language dependent and the most used 
-languages are Java and C++
-
-But those detection methods can be easily converted to other languages
+languages are Java and C++, but those detection methods can be easily converted to other languages
 just by modifying the font-end.
-
-%\begin{center}
-%\includegraphics[scale=0.75]{language_generality.png}
-%\end{center}
+\begin{center}
+	\includegraphics[scale=0.75]{language_generality.png}
+	\end{center}
 
 \subsection{Detection Level}
 We found out that almost all of design patterns detection methods 
 identify the patterns on a source code level, though, the detection could
 be done on multiple levels.
 
-%\begin{center}
-%\includegraphics[scale=0.75]{detection_level.png}
-%\end{center}
+\begin{center}
+\includegraphics[scale=0.75]{detection_level.png}
+\end{center}
 
 
 \subsection{Detection generality}
@@ -440,16 +437,20 @@ This category was used to expose specific pattern detection methods.
 Most papers present a general way to detect design patterns.
 
 
-%\begin{center}
-%\includegraphics[scale=0.75]{detection_generality.png}
-%\end{center}
+\begin{center}
+\includegraphics[scale=0.75]{detection_generality.png}
+\end{center}
 
 
 \subsection{Validation Methods}
 
-%\begin{center}
-%\includegraphics[scale=0.75]{validation_method.png}
-%\end{center}
+Case studies are the most common methods with a weak rate of experiences and a total absence of true benchmarks, that's why researchers tend to use some gold standards and the most used one is JHotDraw due to the high quantity of design patterns detections tool that are developed in Java.
+We have also noticed that there is no validation standards, there is a lot of tools that can detect patterns, but since there are no standards 
+none of those tools can be truly reliable.
+All of these reasons can lead to a lack of maturity concerning design pattern detection.
+\begin{center}
+\includegraphics[scale=0.75]{validation_method.png}
+\end{center}
 
 
 \subsection{Detected pattern types according to analysis type}
@@ -495,7 +496,7 @@ couldn't reach a consensus.
 \subsection{Classification}
 
 At first, we defined the detection level to be a disjoint classification category.
-However during the classification phase of our study, we stumbled upon unfoseen cases
+However during the classification phase of our study, we stumbled upon unforeseen cases
 where the detection was done at two levels. We had to change the classification
 scheme to allow those cases.
 
