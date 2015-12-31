@@ -18,6 +18,8 @@
 
 % The following packages can be found on http:\\www.ctan.org
 %\usepackage{graphics} % for pdf, bitmapped graphics files
+\usepackage{graphicx} % for png files
+\graphicspath{{img/}}
 %\usepackage{epsfig} % for postscript graphics files
 %\usepackage{mathptmx} % assumes new font selection scheme installed
 %\usepackage{times} % assumes new font selection scheme installed
@@ -42,10 +44,10 @@ Detection of design pattern : A systematic mapping study}
 %         {\tt\small pmisra@cs.wright.edu}}
 %}
 
-\author{Pierre Gerard, Alexandre Saint-Louis Fortier, Badr Mai and Houari Sahraoui \\
+\author{Pierre Gerard, Alexandre St-Louis Fortier, Badr Mai and Houari Sahraoui \\
 Département IRO \\
 Université de Montréal, Montreal, Canada \\
-\{gerardpi,Unknown,Unknown,sahraouh\}@iro.umontreal.ca
+\{gerardpi,stlouial,sahraouh\}@iro.umontreal.ca
 % <-this % stops a space
 %\thanks{*This work was not supported by any organization}% <-this % stops a space
 %\thanks{$^{1}$H. Kwakernaak is with Faculty of Electrical Engineering, Mathematics and Computer Science,
@@ -69,7 +71,14 @@ Université de Montréal, Montreal, Canada \\
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{abstract}
 
-Abstract goes here
+% Place holder
+
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. In pulvinar dui eget dignissim congue. Aenean interdum orci arcu, non varius nibh condimentum eu. Ut eget purus et purus pharetra egestas. Sed nec convallis lorem. Mauris fringilla velit est, elementum tincidunt lorem hendrerit ac. Vivamus et lorem nisi. Maecenas interdum diam id turpis aliquet lacinia.
+
+Morbi rutrum tortor volutpat lacus lobortis interdum. Nam at mauris tristique, vulputate tortor non, egestas ex. Ut mauris libero, egestas at lacus sit amet, volutpat volutpat sapien. Quisque aliquet diam maximus lorem laoreet accumsan. Integer eleifend magna at nunc dapibus bibendum. Nam sagittis velit quis neque rhoncus, eget venenatis ante suscipit. Cras condimentum quam justo, quis pharetra nisi porta at. Sed sed ultricies dui. Sed id facilisis metus.
+
+Maecenas feugiat augue purus, id interdum tellus sagittis at. Donec a orci sem. Aenean non elit maximus, fermentum odio et, mattis neque. Sed interdum in odio at egestas. Proin vel mi at elit congue lacinia et eu lectus. Praesent at rhoncus ante. Sed pulvinar tortor quis congue sagittis. Quisque tortor mi, semper vel rhoncus eu, sollicitudin et nibh.
 
 \end{abstract}
 
@@ -77,18 +86,39 @@ Abstract goes here
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{INTRODUCTION}
 
-Introduction goes here
+% Design patterns are a 
+
+Design partterns are best pratice to recurring problems proposed by the Gang
+of Four in their seminal book.
+
+(Some study author) have been able to show that the presence of design patterns
+can help one better understand a piece of software.
+
+Detection of design patterns in software has been a relatively active research
+interest of the past decade in software engineering.
+Proposed methods of automatic detection aims in part to facilitate the work of
+developpers in understanding a piece of software through reverse engineering.
+
+However, no studies have been conducted to analyse the trends of the field.
+
 % pourquoi la detection
 
 % pourquoi ce systematic mapping
 
 \section{SYSTEMATIC MAPPING PROCESS}
 
-In this section, we discuss step by step how we conducted our systematic mapping study. We have followed the process defined by Petersen et al \cite{c1}. 
+In this section, we discuss step by step how we conducted our systematic
+mapping study.
+We have followed the process defined by Petersen et al \cite{c1}. 
 
 \subsection{Research question}
 
-The main goal of this paper is to determine the quantity and trends of research in design pattern detection and the quality of proposed detection methods.
+The main goal of this paper is to determine the quantity and trends of research
+in design pattern detection and the quality of proposed detection methods.
+% Our classification scheme doesn't really allow us to take any position
+% relative to the quality of the methods. At most, it provide a sensible
+% evaluation of the field
+
 \begin{itemize}
 	\item \textbf{RQ1} : How mature is research on the subject of design pattern detection ?
 	\item \textbf{RQ2} : What methods of design pattern detection are used ?
@@ -97,73 +127,310 @@ The main goal of this paper is to determine the quantity and trends of research 
 
 \subsection{Data source and queries}
 
-We decided to query only one database, Scopus \cite{c2}, that claimed to be the largest abstract and citation database of peer-reviewed literature. It indeed index the main Computer Science databases : Springer, IEEE, ACM and others. The main advantage of doing so is that one could easily export result of an important number of publication from Scopus.
+We decided to query only one database, Scopus \cite{c2}, that claims to be the
+largest abstract and citation database of peer-reviewed literature.
+It indexes the main Computer Science databases : Springer, IEEE, ACM and
+others.
+The main advantage of using Scopus is that it provides a functionnality to
+export the result of a search query on its database.
+Some of those exported results would not have been easily obtainable on some
+publishers search engines that do not provide an export functionnality.
+Consequently, Scopus was used mostly as a Search and Export portal over the
+relevant publications, greatly reducing the effort needed to extract the
+original articles set. 
+% TODO: Original articles set <- better wording?!
 
-From the two research question we tried to maximise the number of publication found on the subject. To achieve that purpose we used for the query a disjonction of thesaurus for detection on their respective contracted form : detect*, recogni* and ident*. We have then added to the query a disjonction of pattern and motif.
-We have limited the query to the abstract, the title, and keywords of each article.
+From the two research questions we tried to maximise the number of publications
+found on the subject.
+% Thesaurus is a synonym dictionnary... therefore a "disjunction of thesaurus"
+% doesn't make any sense.
+To achieve that purpose we used for the query a disjonction of thesaurus for
+\textit{detection} on their respective contracted form : \textit{detect*},
+\textit{recogni*} and \textit{ident*}.
+We have then added to the query a disjonction of \textit{pattern} and \textit{motif}.
+The query was limitied to the abstract, the title, and keywords of each article.
+% Do we like oxford comma?
 
-We have limited our research to the year between 2000 and 2015 included. 
+To limit the scope of our research only the articles published between the years
+2000 and 2015 have been included. 
 
-We have also limited our research to the field of computer science and engineering.
+% This sentence is not necessary... It is evident that we excluded other domains.
+We have also limited our research to the field of computer science and
+engineering.
 
-The query resulted of a total of 403 articles. In those articles, we found two duplicates that we have immediately removed from the result.
+The query resulted in a total of 403 articles.
+Of those articles, we found two duplicates that were immediately removed from
+the set of articles to analyse which brings down the number of articles for
+screening to 401.
 
 \subsection{Screening}
 
-After having queried the database, we exported results found and process to screening. 
+% Problem with that sentence
+After having queried the database, we exported the results found and process to
+screening. 
 
-This process was done by pair. For each article, we check that the result was the same for each individual in the pair. In the case of difference, we first talk about it to find common ground, then if the conflict was not resolved, we asked a senior researcher for a final decision.
+This process was done by pair.
+For each article, we check that the result was the same for each individual in
+the pair.
+In the case of difference, we first talk about it to find common ground, then
+if the conflict was not resolved, we asked a senior researcher for a final
+decision.
 
-The aim of screening is to select papers relevant to design pattern detection. For that purpose, we used an exclusion scheme containing four criteria :
+The aim of screening is to select papers relevant to design pattern detection.
+For that purpose, we used an exclusion scheme containing four criteria:
 
 \begin{enumerate}
-	\item \textbf{Not a contribution in software engineering} : this criteria also exclude articles that are not more than an use case of software engineering,
-	\item \textbf{Not a full conference or research paper},
-	\item \textbf{Not about software design pattern} : this criteria exclude articles where the main contribution is not about design pattern as defined in the Gang Of Four ,
-	\item \textbf{The main contribution of the paper is not about detection of design pattern}.
+  \item \textbf{Not a contribution in software engineering}: 
+    This criterion was used to exclude articles not relevant to the domain and
+    software engineering articles that are nothing more than mere use case
+    reports.
+  \item \textbf{Not a full conference or research paper},
+    This criterion was used to exclude small
+  \item \textbf{Not about software design pattern}:
+    This criterion excludes articles where the main contribution is not about
+    design pattern as defined in by the Gang of Four ,
+  \item \textbf{The main contribution of the paper is not about a method of detecting design patterns}:
+    This criterion was used to exclude benchmarks and other analysis whose main
+    purposes are not a method of design pattern detection.
 \end{enumerate}
 
-If in article matched more than one criteria, we assigned the lowest criteria to him.
+If in article matched more than one criteria, we assigned the lowest criteria
+to it.
 
-We were three author to work on the screening, we therefore created three pair of author including on average 135 articles per pair.
+We were three author to work on the screening, we therefore created three pair
+of author including on average 135 articles per pair.
 
-The inter-rater agreement cohen's kappa gave us the following result:
+The inter-rater agreement Cohen's kappa gave us the following result:
 % citation needed
 
 \begin{center}
-  \begin{tabular}{ | l | c | }
-    \hline
-    Group 1 & 0.88 \\ \hline
-    Group 2 & 0.66 \\ \hline
-    Group 3 & 0.91 \\
-    \hline
+  \begin{tabular}{ lcc }
+    \bf Group & \bf \# of articles & \bf Cohen's kappa \\
+    1 & ??? & 0.88 \\
+    2 & ??? & 0.66 \\
+    3 & ??? & 0.91 \\
   \end{tabular}
 \end{center}
 
-It is usually said that a cohen's kappa coefficient of more than 0.7 indicate a good agreeement.% citation needed
+It is usually said that a Cohen's kappa coefficient of more than $0.7$ indicate
+a good agreeement.% citation needed
 
 \subsection{Classification scheme}
 
-To determine a relevant classification scheme we mainly used three things. The first was our general knowledge of the field on the subject and the matter ensuing. The second was the information extracted during the screening process that allowed us to identify the most important classification items. The last one was advices on which are the important point from a senior researcher who used to work on design pattern detection techniques.
+To determine a relevant classification scheme we mainly used three things.
+The first was our general knowledge of the field on the subject and the matter
+ensuing.
+The second was the information extracted during the screening process that
+allowed us to identify the most important classification items.
+The last one was advices on which are the important point from a senior
+researcher who used to work on design pattern detection techniques.
 
 All of that leaded us to seven main categories.
 
 \begin{itemize}
-	\item \textbf{Detection strategy} : This determine the means on which the detection is based. It could include Artificial intelligence, machine learning, graph, metrics, logic, automata, instrumentation, pattern matching or others techniques.
-	\item \textbf{Language generality} : This specifies if the detection is langage dependent or independent,
-	\item \textbf{Analysis type} : This determine if a detection techniques use a static, dynamic or hybrid approach.
-	\item \textbf{Validation method} : This specifies the type of scientific validation methods the article's authors used for a detection method.
-	\item \textbf{Detection Level} : This define on which level the detection method work : execution, source and model. It could be more than one level for a single method of detection.
-	\item \textbf{Detected pattern types} : This characterizes the type of design pattern a specific detection method can manage.
-	\item \textbf{Pattern detection generality} : This determine if a method is made to detect a single pattern or more than one pattern.
+  \item Detection strategy:
+    This determine the means on which the detection is based.
+    Possible values: Artificial intelligence, Logic/Formalisation, Graph,
+    Metric, Automata, Instrumentation/profiling and Others.
+
+  \item Language dependance
+    This category aims to classify detection methods on wether it is dependant
+    on the language or not. 
+    Possible values: Dependant or Independant
+% This  specifies if the detection is langage dependent or independent,
+
+  \item Analysis type
+    This determine if a detection techniques use a static, dynamic or hybrid
+    approach.
+    Possible values: Static, Dynamic and Hybrid.
+
+  \item Validation method:
+    This specifies the type of scientific validation methods the article's 
+    authors used for a detection method.
+    Possible values: Benchmark, Case study, Experiment, Survey, Other and
+    None.
+    
+  \item{Detection Level}
+    This define on which level the detection method work : execution, source
+    and model.
+    It could be more than one level for a single method of detection.
+    Possible values: Execution, Source and Model.
+
+  \item Detected pattern types :
+    This characterizes the type of design pattern a specific detection method
+    can manage.
+    The possible values for this category are Creationnal, Behavioural,
+    Structural and Not specified.
+
+  \item Pattern detection generality :
+    This determine if a method is made to detect a single pattern or more than
+    one pattern.
+    Possible values: Specific, General.
 \end{itemize}
 
-
 \subsection{Systematic map}
+
+% Need result table
+
+
+\subsubsection{Year distribution}
+% Need to change the title for this graphic
+
+\begin{center}
+\includegraphics[scale=0.75]{articles_by_years.png}
+\end{center}
+
+
+\subsubsection{Venue Distribution}
+% Need a graphic for article by publishers.
+
+
+\subsubsection{Detection Strategy}
+
+
+\begin{center}
+\includegraphics[scale=0.75]{detection_strategy.png}
+\end{center}
+
+
+\subsubsection{Analysis Type}
+
+Design pattern detection can be done either statically or dynamically.
+
+
+\begin{center}
+\includegraphics[scale=0.75]{analysis_type.png}
+\end{center}
+
+
+\subsubsection{Detected Pattern Types}
+
+The Gang of Four identified three design pattern types: creationnal,
+behavioural and structural patterns.
+Due to the nature of each pattern types, it is usally aknowledged that
+structural patterns should be easier to detect than behavioural patterns and
+that the later are easier than creationnal patterns (citation needed). 
+It was expected that this ordering would appear in the number of articles
+associated with each pattern types. 
+However, we can see that the detection of behavioural patterns has been the
+subject of more articles than the two others.
+
+\begin{center}
+  \includegraphics[scale=0.65]{pattern_types.png}
+\end{center}
+
+This can be explained either by the fact that structural design patterns
+detection is considered as an easy problem, thus less likely to be the main
+focus of a research papers or by the possibility is that behavioural design
+patterns are in fact easier to detect than structural ones.
+However, we believe the first possibilty to be more likely.
+
+
+
+\subsubsection{Language dependance}
+
+\begin{center}
+\includegraphics[scale=0.75]{language_generality.png}
+\end{center}
+
+
+\subsubsection{Detection Level}
+
+\begin{center}
+\includegraphics[scale=0.75]{detection_level.png}
+\end{center}
+
+
+\subsubsection{Detection generality}
+
+\begin{center}
+\includegraphics[scale=0.75]{detection_generality.png}
+\end{center}
+
+
+\subsubsection{Validation Methods}
+
+\begin{center}
+\includegraphics[scale=0.75]{validation_method.png}
+\end{center}
+
+
+\subsubsection{Detected pattern types according to analysis type}
+% Need graphics
+
+
+
+
+
+
+
+
+
+
+
 
 %todo
 
 \section{SELECTION PROCESS RESULT}
+
+DATA
+
+\section{Study limitations}
+
+\subsection{Selection Bias}
+
+A possible limitation of our studies is the selection of a unique source for 
+the articles in Scopus.
+This was done to facilitate our work in the extraction of relevant articles
+since Scopus offers to export the results of a search query on its database.
+It has been assumed that it does an exhaustive indexing of the journals
+and conferences it references and that those sources includes most of the
+relevant publications that covers software design pattern detection.
+To mitigate the possibility of missing relevant articles we made sure that
+Scopus indexes the big venues of software engineering (ACM, Springer, IEEE, and
+???).
+
+\subsection{Screening}
+
+There is a possibility for relevant articles to have been excluded at the
+screening level due to a non representative title and abstract.
+We believe the possibility to be unlikely since each article were screened by
+two reviewers and that if the article had a possibly misleading title, it would
+be rejected after a complete reading done before the classification phase.
+
+As it can be seen with Cohen's kappa coefficient of the second screening group,
+there were some disagreement related to the inclusion or the exclusion of some
+articles.
+Most of those disagreement comes from different views of what constitute a
+software engineering papers and the fact that many fields have adopted the
+concept of design patterns.
+Even if the Cohen's kappa coefficient can be considered somewhat low for the
+second group, we are confident with our screening since most disagreement have
+been resolved by an experienced researcher in the field if a pair of reviewers
+couldn't reach a consensus.
+
+
+\subsection{Classification}
+
+At first, we defined the detection level to be a disjoint classification category.
+However during the classification phase of our study, we stumbled upon unfoseen cases
+where the detection was done at two levels. We had to change the classification
+scheme to allow those cases.
+
+
+\section{Related works}
+
+
+
+So far, no other comparable studies has been done on the field of design pattern
+recognition.
+
+(article on method validation) have identified a problem in the evaluation of design
+pattern detection methods. This problem has been observed in our evaluation of the
+domain in that most articles evaluates their algorithms with case studies that are
+hardly comparable.
+
+
 
 
 \section{CONCLUSIONS}
