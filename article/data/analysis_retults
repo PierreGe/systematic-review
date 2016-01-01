@@ -1,0 +1,64 @@
+======================================================
+Accepted for classification:	55
+Rejected before classification:	38
+======================================================
+== Yearly distribution ===============================
+2000:		0
+2001:		0
+2002:		0
+2003:		1
+2004:		2
+2005:		6
+2006:		4
+2007:		3
+2008:		8
+2009:		4
+2010:		7
+2011:		4
+2012:		5
+2013:		7
+2014:		2
+2015:		2
+
+== Detection strategy ================================
+Ai:		11
+Logic:		19
+Graph:		13
+Metric:		7
+Automata:	1
+Profiling:	9
+Matching:	8
+Others:		19
+
+== Language Dependance ===============================
+Dependant:	37
+Independant:	16
+
+== Analysis Type =====================================
+Static:		32
+Dynamic:	21
+Hybrid:		12
+
+== Detection Level ===================================
+Exec:		8
+Source:		44
+Model:		8
+
+== Detection generality ==============================
+Generic:	40
+Specific:	11
+
+== Detected pattern types ============================
+Creationnal:	22
+Behavioural:	37
+Structural:	33
+Other:		12
+
+== Validation method =================================
+Benchmark:	7
+Case study:	37
+Experiment:	8
+Survey:		0
+Other:		1
+None:		8
+

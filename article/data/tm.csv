@@ -1,0 +1,97 @@
+Rejet,evaluateur,Date publication,Article,Ds-ai,Ds-graph,Ds-logic,Ds-metric,Ds-automaton,Ds-prof,Ds-matching,Ds-other,Lg-dependant,Lg-independant,At-static,At-dynamic,At-hybrid,Vm-benchmark,Vm-casestudy,Vm-experiment,Vm-survey,Vm-other,Vm-none,Dl-exec,Dl-source,Dl-model,Pt-creationnal,Pt-structural,Pt-behaviour,Pt-other,Dg-specific,Dp-generic,Commentaires
+,Alex,2015,6,,x,x,,,,,,,X,,x,X,,X,,,,,,,X,,X,X,,,X,
+,Alex,2013,30,x,,,x,,,,,x (frontend),,,x,,,x,,,,,,x,,,x,x,,,x,
+,Alex,2013,40,,,x,,,,,,,x,,,x,,,,,,x,,,x,,,,x,,x,
+,Alex,2013,50,,,x,,,,,,x (java frontend),,,x,,,x,,,,,,x,,,x,x,,,x,
+,Alex,2013,52,,x,,,,x,,,x (java),,x,,,,,,,,x,x,,,,x,x,,,x,
+introuvable,Alex,2013,55,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,Alex,2012,69,,,,,,x,,x,x (bytecode),,x,x,,,x,,,,,,x,,x,,x,,,x,
+,Alex,2012,80,,,x,,,x,,,x (frontend),,x,x,,,,,,,x,x,x,,,,x,,x,,
+,Alex,2012,103,,,,,,,,x,x (Abstract algorithm explaination. Java for test only),,,x,,,x,,,,,,x,,,x,x,,,x,
+introuvable,Alex,2011,134,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+not DDP,Alex,2011,141,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,Alex,2011,151,,,,,,x,,,"x (Java implementation, but mostly general to oo languages)",,x,x,,,x,,,,,,x,,,,x,,,x,
+not DDP,Alex,2011,153,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,Alex,2010,158,,x,,,,,,,x (ne parle pas de language dans l'algo),,,x,,,x,,,,,,x,,x,x,x,,,x,
+,Alex,2010,159,,,x,,,x,,,X (java),,x,x,x,,x,,,,,x,x,x,,,x,,,x,
+not DDP,Alex,2010,163,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Technique d'analyse des algo de DDP,Alex,2010,190,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+2-pages,Alex,2010,197,,,x,,,x,,,x (java et matlab),,x,x,,,x,,,,,x,x,,,,x,,,x,
+not DDP,Alex,2009,212,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,Alex,2009,228,,,x,,,,,,,x (UML),,,x,,x,,,,,,,x,x,x,x,,,x,
+????,Alex,2008,237,,,,,,,,(manual annotation),x (annotation),,,x,,,,,,,x,,x,,,,,x,,x,
+,Alex,2008,248,,,,,,x,,x,x java,,x,x,,,x,,,,,,x,,x,x,x,,,x,
+,Alex,2008,256,,,,,,x,,,x (implementation for c++ but general),,x,x,,,x,,,,,,x,,x,x,x,,,x,
+,Alex,2008,258,x,,,,,,,,,x (Not really specified but test on Java),,x,,,x,,,,,,x,,,,,x,,x,
+Benchmark,Alex,2008,262,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,Alex,2006,307,,x,,,,,x,,,x (PADL gère le parsing des différent languages,,,x,,x,,,,,,,x,x,x,,,,x,
+,Alex,2006,314,,,,,x,x,,,,x (Doesn't talk about language at all. Seems to be Java though),x,x,x,,x,,,,,,x,,,,x,,x,,
+introuvable,Alex,2005,334,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+2-pages,Alex,2005,337,,,,,,,,X,,,,x,,,,,,,x,,x,,x,x,x,,x,,
+,Alex,2005,339,x,,,,,,,,,,,x,,,x,,,,,,x,,,x,x,,,x,
+2-pages,Alex,2005,348,,,x,,,,,,x (frontend),,,x,,,,,,,x,,x,,,,,x,,x,
+,Alex,2005,355,,,,x,,,,,,x,,,x,,,,,,x,,,x,,,,x (Composed patterns),x,,
+Article nv : L'artile présente une étude comparant les résultat des differents outils de DPD ,Badr,2015,2,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Article nv : L'artile présente une étude comparant les résultat des differents outils de DPD 
+,Badr,2014,12,,,,X(semantic_coverage,,,,"X(XML
+document retrieval technique/Some filtering approach/Patter decomposition)",X(Java),,,X,,,X,,,,,,X,,,X,,,,X,
+,Badr,2013,37,,,X(specific and generic pattern transformations of a Prolog query),,,,,,X(Java),,X,,,,X,X,,,,,,X,X,,,,X(Singleton),,
+Article nv : l'article présente un outil pour élimination des faux positives,Badr,2012,63,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Article nv : l'article présente un outil pour élimination des faux positives
+Article nv : l'article présente un outil qui fait une comparaison entre different DPD tools,Badr,2012,95,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Article nv : l'article présente un outil qui fait une comparaison entre different DPD tools
+,Badr,2012,96,,,X(SWI-Prolog modules),,,,,,X(Java),,X,,,,X,,,,,,X,,X,X,X,,,X,
+,Badr,2011,113,X,,,,,,,X(measurements of metrics),X(Java),,X,,,,X,,,,,,X,,,,,X,X(Singleton; TemplateMethod; Adapter; State;Strategy),,
+Article introuvable,Badr,2011,121,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Article introuvable
+Article nv : L'article présente une solution pour la comparison; fusion; visualisation; et la validation des résultats des differents DPD tools,Badr,2011,152,,,,,,,,,,,,,,,,,,,,,,,,,,,,,"Article nv : L'article présente une solution pour la comparison; fusion; visualisation;
+et la validation des résultats des differents DPD tools"
+Article a 3 pages,Badr,2010,192,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Article a 3 pages
+,Badr,2010,194,,,X(Prolog predicates),,,,,,X(java),,,,X,,X,X,,,,,X,,,X,X,,X(Observer;Singleton; Strategy; Adapter; Decorator),,
+Article nv : Short Article,Badr,2010,200,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Article nv : Short Article
+Article nv : Short Article,Badr,2010,201,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Article nv : Short Article
+,Badr,2010,208,,X,,,,,X,X(Iterative bit-vector processing algorithm,,X,,X,,,X,,,,,,X,,,,,X,,X,
+Article nv : Short Article,Badr,2009,211,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Article nv : Short Article
+Article non trouvé,Badr,2009,223,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Article non trouvé
+,Badr,2008,270,,,X(Prolog[Predicat du 1er Ordre]),,,,,X(Detection of Meta-patter/,X(Java),,,,X,,X,,,,,,X,,X,X,X,X(J2EE Patterns),,X,
+Article nv : Short Article,Badr,2007,274,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Article nv : Short Article
+Article nv : c'est formalisation de design pattern,Badr,2007,284,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Article nv : c'est formalisation de design pattern
+Article nv : article à 2 pages,Badr,2007,288,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Article nv : article à 2 pages
+,Badr,2007,296,,,,,,,,"X(uasage of run-time call
+stack)",X(Java),,,X,,,X,X,,,,,X,,,,,X,X(Data Transfer Object),,
+,Badr,2007,305,,X,,,,,X,,X(C++/C#/Java,,,X,,,X,,,,,,X,,,,,X,,X,
+Article nv : L'article fait une comparaison entre different outils de detection de pattern et ne parle d'aucune methode de détection,Badr,2006,312,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Article nv : L'article fait une comparaison entre different outils de detection de pattern et ne parle d'aucune methode de détection
+,Badr,2006,319,,X,,,,,,X(filtering[Safe Filtering algorithm]),X(Java),,,X,,,X,,,,,,X,,,,,X,X(Singleton; Composite; PartialObserver; FullObserver; Decorator; Bridge),,
+,Badr,2005,340,,X,,,,,X,X(decomposing patterns(sub-pattern)),X(Java),,X,,,,X,,,,,,X,,,,,X,,X,
+,Badr,2004,368,X(JRip ML algo for DataMining),,,X,,,,X(usage d'une DPL contenant des micro-architecture similaire aux disigns motifs),,X,,,X,,X,X,,,,,X,,,,,X,,X,
+,Badr,2004,377,,,X,,,,,,,X,,X,,,X,,,,,,X,,,,X,,X(TemplateMethod; Visitor),,
+L'article présente un outil pour la spécification des design pattern et ne parle pas de détection,Badr,2003,380,,,,,,,,,,,,,,,,,,,,,,,,,,,,,L'article présente un outil pour la spécification des design pattern et ne parle pas de détection
+,Badr,2003,384,,X,,,,,X,X(Detection of Call Delegations/Object Creations/Operation Redefinitions),X(C++),,X,,,,X,,,,,,X,,,,,X,,X,
+,Pierre,2015,4,,X,,,,,,,X (depend de JAVA dans l'article mais problablement généralisable),,X,,,X ,X,,,,,,X,,X,X,X,,,X,
+,Pierre,2014,10,,,X (ontology + semantic inference),,,,,,,X (règle SWRL),X,,,X ,,,,,,,X,,X,X,X,,,X,
+Article de 4 pages tout compris. Pas très détaillé; resultat à utiliser avec précautions,Pierre,2013,32,,X,,,,,,,,X,X,,,,X,,,,,,X,,,,,X,,X,Article de 4 pages tout compris. Pas très détaillé; resultat à utiliser avec précautions
+,Pierre,2013,33,X,,,,,,,,,X (pas de précision),X,,,X (vrai benchmark),,X,,,,,X,,,X,X,,,X,
+,Pierre,2013,39,,X,,,,,,Graph-matching,X (java),,X,,,X,,,,,,,,X,X,X,X,,,,
+Cet article est introuvable; la conf est bidon,Pierre,2013,53,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Cet article est introuvable
+,Pierre,2012,65,,,X (web semantic approach),,,,,,X (Java c'est précisé),,X,,,,,,,,,,X,,X (alo),X (alo),X (alo),,,,
+Cet article ne présente pas un outils de detection mais un outils pour passer d'une code a un modele. Un exemple est fourni pour detecter le pattern composite mais c'est tout,Pierre,2012,86,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Cet article ne présente pas un outils de detection mais un outils pour passer d'une code a un modele. Un exemple est fourni pour detecter le pattern composite mais c'est tout
+,Pierre,2011,104,"X (fuzzy clustering) mais ne fait pas lui meme la detection juste du ""pre-processing"";ils utilisent des outils pour la detection en elle meme",,,,,,,,X (depend de JAVA dans l'article mais problablement généralisable),,X,,,,X,,,,,,X,,,X,X,,,X,Cette technique permet de réduire le nombre de faux positif 
+,Pierre,2011,109,,,,,,,,Identification de microstructure.,,X,X,,,,,,,,X,,X,,X,,X,,,X (Seul 2 DPs peuvent être detecté avec cette méthodes),
+Les DPs de cette articles sont (liste non exhaustive) : Drawing Text  editing puzzle …,Pierre,2011,112,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Les DPs de cette articles sont (liste non exhaustive) : Drawing;  Text  editing; puzzle …
+,Pierre,2010,162,,,X (constaint programming),,,X (dynamic profiling),,Ce que trouve d'autres programmes de DDP en input,X (test de java uniquement;mais generalisable),,,,X,X,X,,,,,X,X,,X,,X,,,,Difficile de trouver un creationnal de manière statique donc dynamique l'analyse ici
+,Pierre,2010,180,,X,,,,,,,,X,X,,,,,,,,X,,Probablement source maispas décrit explicitement .. (cf commentaire)?,,X,X,X,,,X,Cet article est d'une qualité très discutable
+,Pierre,2010,203,,,,,,,X,La semantic des annotations,X (java),,X,,,X,,,,,,,X,,X,X,X,,,X,
+Cet article est une review de deux methodes existante de detection,Pierre,2009,214,,X (similiraty scoring in graph),X( fuzzy logic),,,,,,,X (UML),X,,,,X,,,,,,,X (UML),,,,,,,Cet article est une review de deux methodes existante de detection
+,Pierre,2009,222,,,X (ontology),,,,,,X (java),,X,,,,X,,,,,x (java byte code),,,X (singleton),x,x,,,,
+Cela ne detecte pas les DPs mais ou sont se situe les codes smells,Pierre,2009,232,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Cela ne detecte pas les DPs mais ou sont se situe les codes smells
+,Pierre,2009,233,,,,,,,,Fusion des resultats de plusieurs outils,X (java),,,,X,X,,,,,,X,X,,,X,X,,,X,
+,Pierre,2009,236,,,X (CSP ),X( numerical signature from metrics),,,,,X (java),,X,,,,,,,Exploratory study,,,X,,X,X,,,,X,
+Cela ne detecte pas les DPs mais dit si pour chaque ils peuvent être utile pour la migration,Pierre,2008,243,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Cela ne detecte pas les DPs mais dit si pour chaque ils peuvent être utile pour la migration
+,Pierre,2008,245,,,,,,,X,,,,,X,,,X,,,,,X,,,,X,X,,,X,
+,Pierre,2008,246,X (clustering),,,,,,,,,X (pas de precision),X,,,,,X,,,,,X (classe + relation entre classe),,,X,,,X (testé pour un seul pattern :proxy),,
+Cela ne detecte pas les DPs mais propose des metrics pour evaluer leur qualité une fois detecter (par un autre processus) ,Pierre,2008,247,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Cela ne detecte pas les DPs mais propose des metrics pour evaluer leur qualité une fois detecter (par un autre processus) 
+,Pierre,2008,255,X (some NLP),,,,,,X (find subset of known motif),,X (java),,X,,,,X,,,,,,X,,X,X,X,,,X,
+,Pierre,2008,260,X (clustering),,,,,,,,,X,X,,,,,X,,,,,X,,,X,X,,,X,
+,Pierre,2007,281,X (supervised + data mining),,,X (utilise d'abord des metriques pour isoler des micro-component,,,,,X (Java dans l'article + depend d'un plugin eclipse),,X,,,,,X,,,,,X,,,,X,,,X,
+,Pierre,2006,325,,X,,,,,,X (similarity scoring),X (java),,X,,,,X,,,,,X (byte code java),,,,X,X,,,X,
+,Pierre,2005,338,,,X (OWL),,,,,,X (java),,X,,,,,,,,X,,X,,X (AbsFactory only),,,,X (l'implementation des auteurs ne permet de détecter que un seul DP),,
+C'est plus un Short paper que un article,Pierre,2005,345,,,,,,,,X (NONE),,X,X,,,,,,,,,,X,,,,,None,,X,C'est plus un Short paper que un article
+,Pierre,2005,356,,,X (rules),,,,,,X (java),,X,,,,X,,,,,,X,,,X,,,,X,
+C'est un service pour visualiser les DP par pour les identifier,Pierre,2005,359,,,,,,,,X (NONE),,X,,,,,,,,,X,,,X,,,,X,,X,C'est un service pour visualiser les DP par pour les identifier
+,Pierre,2005,363,,,X ( la structure est trandormé en règles prolog),X,,,,Negative/positive critéria,X (Cpp),,X,,,,,,,,X,,X,,X,X,X,,,X,Détails la detection de chaque pattern individuelement
