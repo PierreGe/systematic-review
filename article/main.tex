@@ -21,6 +21,8 @@
 \usepackage{graphicx} % for png files
 \graphicspath{{img/}}
 \usepackage{multirow}
+%\usepackage[T1]{fontenc}
+%\usepackage[utf8]{inputenc}
 %\usepackage{epsfig} % for postscript graphics files
 %\usepackage{mathptmx} % assumes new font selection scheme installed
 %\usepackage{times} % assumes new font selection scheme installed
@@ -88,14 +90,14 @@ The result help us understand how those techniques work and which type of patter
 
 % Design patterns are a 
 
-Design partterns are best pratices proposed by the Gang of Four in their seminal
-book to recurring design problems.
+Design partterns are best pratices to recurring design problems first proposed
+by the Gang of Four in their seminal book.
 
 (Some study author) have been able to show that the presence of design patterns,
-if correctly presented, can help one better understand a piece of software
-[citation needed].
-It is therefore desirable to be able to automatically extract those design
-and present them in a digestible format.
+if correctly presented, can help developpers better understand a piece of
+software [citation needed].
+It would therefore be desirable to be able to automatically extract those
+design patterns and present them in a digestible format.
 
 Detection of design patterns in software has been a relatively active research
 interest of the past decade in software engineering.
@@ -111,7 +113,10 @@ This paper presents a systematic mapping study on design pattern detection
 methods.
 It is organized as follows: 
  The first section explains the systematic mapping process
- The second section analyses
+ The second section explains the selection process results
+ The third one deals analyses the study results
+ The article then continues with the limitations of our study
+ It finishes with related work. 
 
 % pourquoi la detection
 
@@ -127,7 +132,7 @@ We have followed the process defined by Petersen et al \cite{c1}.
 
 The main goal of this paper is to determine the quantity and trends of research
 in design pattern detection and the quality of proposed detection methods.
-% Our classification scheme doesn't really allow us to take any position
+% TODO: Our classification scheme doesn't really allow us to take any position
 % relative to the quality of the methods. At most, it provide a sensible
 % evaluation of the field
 
@@ -154,19 +159,19 @@ original articles set.
 
 From the two research questions we tried to maximise the number of publications
 found on the subject.
-% Thesaurus is a synonym dictionnary... therefore a "disjunction of thesaurus"
-% doesn't make any sense.
+% TODO: Thesaurus is a synonym dictionnary... therefore a "disjunction of
+% thesaurus" makes no sense.
 To achieve that purpose we used for the query a disjonction of thesaurus for
 \textit{detection} on their respective contracted form : \textit{detect*},
 \textit{recogni*} and \textit{ident*}.
 We have then added to the query a disjonction of \textit{pattern} and \textit{motif}.
 The query was limitied to the abstract, the title, and keywords of each article.
-% Do we like oxford comma?
 
 To limit the scope of our research only the articles published between the years
 2000 and 2015 have been included. 
 
-% This sentence is not necessary... It is evident that we excluded other domains.
+% TODO: This sentence is not necessary... It is evident that we excluded other
+% domains.
 We have also limited our research to the field of computer science and
 engineering.
 
@@ -177,7 +182,7 @@ screening to 401.
 
 \subsection{Screening}
 
-% Problem with that sentence: "and process"?  Maybe "proceeded" 
+% TODO: Problem with that sentence: "and process"?  Maybe "proceeded" 
 After having queried the database, we exported the results found and process to
 screening. 
 
@@ -200,7 +205,10 @@ For that purpose, we used an exclusion scheme containing four criteria:
     This criterion was used to exclude small
   \item \textbf{Not about software design pattern}:
     This criterion excludes articles where the main contribution is not about
-    design pattern as defined in by the Gang of Four ,
+    design pattern as defined in by the Gang of Four,
+    % TODO: We cannoct base our exclusion to DP defined by the GoF because we
+    % have a class for other pattern type.
+    % Limiting to software design patterns would be enough
   \item \textbf{The main contribution of the paper is not about a method of detecting design patterns}:
     This criterion was used to exclude benchmarks and other analysis whose main
     purposes are not a method of design pattern detection.
@@ -213,12 +221,12 @@ We were three author to work on the screening, we therefore created three pair
 of author including on average 135 articles per pair.
 
 The inter-rater agreement Cohen's kappa gave us the following result:
-% citation needed
+% TODO: citation needed
 
 \begin{center}
-  \begin{tabular}{ lcc }
+  \begin{tabular}{ ccc }
     \bf Group & \bf \# of articles & \bf Cohen's kappa \\
-    \hline {}
+    \hline
     1 & ??? & 0.88 \\
     2 & ??? & 0.66 \\
     3 & ??? & 0.91 \\
@@ -226,7 +234,7 @@ The inter-rater agreement Cohen's kappa gave us the following result:
 \end{center}
 
 It is usually said that a Cohen's kappa coefficient of more than $0.7$ indicate
-a good agreeement.% citation needed
+a good agreeement. %TODO: citation needed
 
 \subsection{Classification scheme}
 
@@ -250,7 +258,7 @@ All of that leaded us to seven main categories.
     This category aims to classify detection methods on wether it is dependant
     on the language or not. 
     Possible values: Dependant or Independant
-% This  specifies if the detection is langage dependent or independent,
+% TODO: This  specifies if the detection is langage dependent or independent,
 
   \item \textbf{Analysis type}:
     This determine if a detection techniques use a static, dynamic or hybrid
@@ -281,19 +289,44 @@ All of that leaded us to seven main categories.
     Possible values: Specific, General.
 \end{itemize}
 
+
+
 \subsection{Systematic map}
 
 
-%todo
+%TODO
 
 \section{SELECTION PROCESS RESULTS}
 
-DATA
+
 
 
 \section{STUDY RESULTS}
 
+\subsection{Yearly distribution}
+% TODO: Need to change the title for this graphic
+
+The yearly distribution gives us an interesting picture of the field.
+Interest in design patterns detection technique started in the early
+2000 and that interest is fading away since 2010.
+
+This could indicate either that the field is mature and that research avenues
+have been exhaused, that the field currently hit a roadblock, or that interest
+is fading due to a lack of interest in the need for design pattern detection
+tools.
+
 \begin{center}
+\includegraphics[scale=0.7]{articles_by_years.png}
+\end{center}
+
+
+\subsection{Publication Venue Distribution}
+% TODO: Need a graphic for article by publishers.
+
+
+
+\begin{center}
+  \small
   \begin{tabular}{ lll }
     \bf Category & \bf Class & \bf \# of articles \\
     \hline
@@ -317,12 +350,12 @@ DATA
     & \multicolumn{1}{l}{Dynamic}      & \multicolumn{1}{l}{XXX} \\
     & \multicolumn{1}{l}{Hybrid}       & \multicolumn{1}{l}{XXX} \\
     \hline
-    multirow{3}{*}{Detection Level}
+    \multirow{3}{*}{Detection Level}
     & \multicolumn{1}{l}{Execution}    & \multicolumn{1}{l}{8} \\
     & \multicolumn{1}{l}{Source}       & \multicolumn{1}{l}{44} \\
     & \multicolumn{1}{l}{Model}        & \multicolumn{1}{l}{7} \\
     \hline
-    \multirow{2}{*}{Pattern detection generality}
+    \multirow{2}{*}{Detection generality}
     & \multicolumn{1}{l}{Specific}     & \multicolumn{1}{l}{XXX} \\
     & \multicolumn{1}{l}{General}      & \multicolumn{1}{l}{XXX} \\
     \hline
@@ -342,27 +375,6 @@ DATA
     & \multicolumn{1}{l}{None}         & \multicolumn{1}{l}{11}
   \end{tabular}
 \end{center}
-
-\subsection{Yearly distribution}
-% Need to change the title for this graphic
-
-The yearly distribution gives us an interesting picture of the field.
-Interest in design patterns detection technique started in the early
-2000 and that interest is fading away since 2010.
-
-This could indicate either that the field is mature and that research avenues
-have been exhaused, that the field currently hit a roadblock, or that interest
-is fading due to a lack of interest in the need for design pattern detection
-tools.
-
-\begin{center}
-\includegraphics[scale=0.75]{articles_by_years.png}
-\end{center}
-
-
-\subsection{Publication Venue Distribution}
-% Need a graphic for article by publishers.
-
 
 \subsection{Detection Strategy}
 
@@ -414,11 +426,20 @@ However, we believe the first possibilty to be more likely.
 
 
 \subsection{Language dependance}
+The main focus of this category was to identify the existance of language
+independant solutions to the detection of design patterns.
+
+To identify truly generic detection methods, proposed solutions requiring a
+frontend to implement have been classified as being dependant on the source
+language. 
+
 The majority of techniques are language dependant and the most used 
 languages are Java and C++
 
 But those detection methods can be easily converted to other languages
 just by modifying the font-end.
+
+Haotian and Shu[52] took a different approach by instrumenting Java bytecode
 
 %\begin{center}
 %\includegraphics[scale=0.75]{language_generality.png}
@@ -429,6 +450,7 @@ We found out that almost all of design patterns detection methods
 identify the patterns on a source code level, though, the detection could
 be done on multiple levels.
 
+
 %\begin{center}
 %\includegraphics[scale=0.75]{detection_level.png}
 %\end{center}
@@ -437,7 +459,18 @@ be done on multiple levels.
 \subsection{Detection generality}
 
 This category was used to expose specific pattern detection methods.
-Most papers present a general way to detect design patterns.
+As expected, papers tend to present detection method for detecting patterns
+in general.
+
+Some papers worth noting presents specifics ways to detect particular patterns.
+
+Marjan Heričko and Simon Beloglavec[355] presents a way of identifying
+composite design pattern, composite here corresponding to the composition of
+atomic DP (MVC).
+
+Ren and Zhao[80] used and hybrid analysis based on OWL, an ontology system,
+to recover instances candidates of Observer pattern followed by a dynamic
+analysis to accept or reject the recovered candidates.
 
 
 %\begin{center}
@@ -494,10 +527,19 @@ couldn't reach a consensus.
 
 \subsection{Classification}
 
+The distribution of articles between the reviewers may seem arbitrary in since it is not evenly distributed.
+In fact one reviewer had two less articles to read.
+This difference is due to an error when we compiled the articles that passed
+the screening phase where one article was featured twice.
+Since the remaining number of articles was not divisible by three, this same
+reviewer had already one less article to read.
+We believe this error has no effect on the overall result. \\
+
 At first, we defined the detection level to be a disjoint classification category.
 However during the classification phase of our study, we stumbled upon unfoseen cases
 where the detection was done at two levels. We had to change the classification
 scheme to allow those cases.
+
 
 
 \section{Related works}
