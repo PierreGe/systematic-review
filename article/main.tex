@@ -126,10 +126,12 @@ We have followed the process defined by Petersen et al \cite{c1}.
 \subsection{Research question}
 
 The main goal of this paper is to determine the quantity and trends of research
-in design pattern detection and the quality of proposed detection methods.
+in design pattern detection and the possibility of proposed detection methods.
 % Our classification scheme doesn't really allow us to take any position
 % relative to the quality of the methods. At most, it provide a sensible
 % evaluation of the field
+
+% Pierre : oui par qualité je voulais dire ce qu'il est capable de detecter : possibility ?
 
 \begin{itemize}
 	\item \textbf{RQ1} : How mature is research on the subject of design pattern detection ?
@@ -151,22 +153,26 @@ Consequently, Scopus was used mostly as a Search and Export portal over the
 relevant publications, greatly reducing the effort needed to extract the
 original articles set. 
 % TODO: Original articles set <- better wording?!
+% Pierre "initial articles set " ?
 
 From the two research questions we tried to maximize the number of publications
 found on the subject.
 % Thesaurus is a synonym dictionnary... therefore a "disjunction of thesaurus"
 % doesn't make any sense.
-To achieve that purpose we used for the query a disjunction of thesaurus for
+% Pierre : remplacé par "words with similar meanings"
+To achieve that purpose we used for the query a disjunction of words with similar meanings for
 \textit{detection} on their respective contracted form : \textit{detect*},
 \textit{recogni*} and \textit{ident*}.
 We have then added to the query a disjunction of \textit{pattern} and \textit{motif}.
 The query was limited to the abstract, the title, and keywords of each article.
 % Do we like oxford comma?
+% Pierre : je découvre ce que c'est, l'internet semble avoir un avis contreversé, il faut juste rester consistant.
 
 To limit the scope of our research only the articles published between the years
 2000 and 2015 have been included. 
 
 % This sentence is not necessary... It is evident that we excluded other domains.
+% Pierre: Difficile à dire vu notre première critère d'exclusion après
 We have also limited our research to the field of computer science and
 engineering.
 
@@ -178,8 +184,8 @@ screening to 401.
 \subsection{Screening}
 
 % Problem with that sentence: "and process"?  Maybe "proceeded" 
-After having queried the database, we exported the results found and process to
-screening. 
+% Pierre : de fait
+After having queried the database, we exported the results found and proceeded to screening. 
 
 This process was done by pair.
 For each article, we check that the result was the same for each individual in
@@ -213,7 +219,6 @@ We were three author to work on the screening, we therefore created three pair
 of author including on average 135 articles per pair.
 
 The inter-rater agreement Cohen's kappa gave us the following result:
-% citation needed
 
 \begin{center}
   \begin{tabular}{ lcc }
@@ -226,7 +231,7 @@ The inter-rater agreement Cohen's kappa gave us the following result:
 \end{center}
 
 It is usually said that a Cohen's kappa coefficient of more than $0.7$ indicate
-a good agreement.% citation needed
+a good agreement \cite{c3}.
 
 \subsection{Classification scheme}
 
@@ -554,6 +559,8 @@ Acknowledgment
 \bibitem{c1} K. Petersen, R. Feldt, S. Mujtaba, and M. Mattsson, “Systematic mapping studies in software engineering,” in Proc. of the 12th Int. Conf. on Eval. and Asses. in Soft. Eng., ser. EASE’08. Swinton, UK, UK: British Computer Society, 2008.
 
 \bibitem{c2} www.scopus.com
+
+\bibitem{c3} Landis, J. Richard, and Gary G. Koch. "The measurement of observer agreement for categorical data." biometrics (1977): 159-174.
 
 
 
