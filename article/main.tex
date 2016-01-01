@@ -50,7 +50,7 @@ Detection of design pattern : A systematic mapping study}
 \author{Pierre Gerard, Alexandre St-Louis Fortier, Badr Mai and Houari Sahraoui \\
 Département IRO \\
 Université de Montréal, Montreal, Canada \\
-\{gerardpi,stlouial,sahraouh\}@iro.umontreal.ca
+\{gerardpi,stlouial,badr.mai,sahraouh\}@iro.umontreal.ca
 % <-this % stops a space
 %\thanks{*This work was not supported by any organization}% <-this % stops a space
 %\thanks{$^{1}$H. Kwakernaak is with Faculty of Electrical Engineering, Mathematics and Computer Science,
@@ -75,7 +75,7 @@ Université de Montréal, Montreal, Canada \\
 \begin{abstract}
 
 % Place holder
-Design patterns are important because they help solving recurring design problems in software engineering. The identification of those patterns can be helpful to maintain and understand the code especially in large systems. Interest in design patterns detection has grown in the last decade.Despite the huge interest given to design patterns detection, there is no reliable or formal method for this matter.
+Design patterns are important because they help solving recurring design problems in software engineering. The identification of those patterns can be helpful to maintain and understand the code especially in large systems. Interest in design patterns detection has grown in the last decade. Despite the huge interest given to design patterns detection, there is no reliable or formal method for this matter.
 We conducted a systematic mapping study on design patterns detection by querying multiple sources to get articles that are relevant to our study. 403 articles between 2000 and 2015 were considered.
 The main purpose of the study is to know which methods and techniques are used to detect design patterns.
 The result help us understand how those techniques work and which type of pattern is detected the most.
@@ -102,12 +102,12 @@ design patterns and present them in a digestible format.
 Detection of design patterns in software has been a relatively active research
 interest of the past decade in software engineering.
 Proposed methods of automatic detection aims in part to facilitate the work of
-developpers in understanding a piece of software through reverse engineering.
+developers in understanding a piece of software through reverse engineering.
 
 However, design pattern detection tools are still not featured in the typical
 programmer toolbox.
 
-No studies have been conducted to analyse the trends of the field.
+No studies have been conducted to analyze the trends of the field.
 
 This paper presents a systematic mapping study on design pattern detection
 methods.
@@ -148,16 +148,16 @@ We decided to query only one database, Scopus \cite{c2}, that claims to be the
 largest abstract and citation database of peer-reviewed literature.
 It indexes the main Computer Science databases : Springer, IEEE, ACM and
 others.
-The main advantage of using Scopus is that it provides a functionnality to
+The main advantage of using Scopus is that it provides a functionality to
 export the result of a search query on its database.
 Some of those exported results would not have been easily obtainable on some
-publishers search engines that do not provide an export functionnality.
+publishers search engines that do not provide an export functionality.
 Consequently, Scopus was used mostly as a Search and Export portal over the
 relevant publications, greatly reducing the effort needed to extract the
 original articles set. 
 % TODO: Original articles set <- better wording?!
 
-From the two research questions we tried to maximise the number of publications
+From the two research questions we tried to maximize the number of publications
 found on the subject.
 % TODO: Thesaurus is a synonym dictionnary... therefore a "disjunction of
 % thesaurus" makes no sense.
@@ -177,8 +177,26 @@ engineering.
 
 The query resulted in a total of 403 articles.
 Of those articles, we found two duplicates that were immediately removed from
-the set of articles to analyse which brings down the number of articles for
+the set of articles to analyze which brings down the number of articles for
 screening to 401.
+
+\begin{figure}
+ \centering
+  \begin{tabular}{ ccc }
+   \bf Group & \bf \# of articles & \bf Cohen's kappa \\
+   \hline {}
+   1 & 133 & 0.88 \\
+   2 & 133 & 0.66 \\
+   3 & 134 & 0.91 \\
+ \end{tabular}
+ \caption{Cohen's Kappa coefficients}
+\end{figure}
+
+\begin{figure*}[tb]
+ \centering
+ \includegraphics[scale=0.2]{flow.jpg}
+ \caption{Flow of information}
+\end{figure*}
 
 \subsection{Screening}
 
@@ -220,18 +238,9 @@ to it.
 We were three author to work on the screening, we therefore created three pair
 of author including on average 135 articles per pair.
 
-The inter-rater agreement Cohen's kappa gave us the following result:
-% TODO: citation needed
+The inter-rater agreement Cohen's kappa gave us the following result presented
+in \textit{fig. 1}. 
 
-\begin{center}
-  \begin{tabular}{ ccc }
-    \bf Group & \bf \# of articles & \bf Cohen's kappa \\
-    \hline
-    1 & ??? & 0.88 \\
-    2 & ??? & 0.66 \\
-    3 & ??? & 0.91 \\
-  \end{tabular}
-\end{center}
 
 It is usually said that a Cohen's kappa coefficient of more than $0.7$ indicate
 a good agreeement. %TODO: citation needed
@@ -251,11 +260,11 @@ All of that leaded us to seven main categories.
 \begin{itemize}
   \item \textbf{Detection strategy}:
     This determine the means on which the detection is based.
-    Possible values: Artificial intelligence, Logic/Formalisation, Graph,
+    Possible values: Artificial intelligence, Logic/Formalization, Graph,
     Metric, Automata, Instrumentation/profiling and Others.
 
-  \item \textbf{Language dependance}:
-    This category aims to classify detection methods on wether it is dependant
+  \item \textbf{Language dependence}:
+    This category aims to classify detection methods on whether it is dependent
     on the language or not. 
     Possible values: Dependant or Independant
 % TODO: This  specifies if the detection is langage dependent or independent,
@@ -280,7 +289,7 @@ All of that leaded us to seven main categories.
   \item \textbf{Detected pattern types}:
     This characterizes the type of design pattern a specific detection method
     can manage.
-    The possible values for this category are Creationnal, Behavioural,
+    The possible values for this category are Creational, Behavioral,
     Structural and Not specified.
 
   \item \textbf{Pattern detection generality}:
@@ -308,7 +317,9 @@ All of that leaded us to seven main categories.
 
 The yearly distribution gives us an interesting picture of the field.
 Interest in design patterns detection technique started in the early
-2000 and that interest is fading away since 2010.
+2000 and that interest plateaued between the years 2005 and 2013.
+Since then the field lost steam with a number of publication per years
+roughly equivalent to those at its inception.
 
 This could indicate either that the field is mature and that research avenues
 have been exhaused, that the field currently hit a roadblock, or that interest
@@ -316,73 +327,85 @@ is fading due to a lack of interest in the need for design pattern detection
 tools.
 
 \begin{center}
-\includegraphics[scale=0.7]{articles_by_years.png}
+ \begin{figure}
+  \includegraphics[scale=0.450]{year_distribution.png}
+  \caption{}
+ \end{figure}
 \end{center}
 
-
-\subsection{Publication Venue Distribution}
-% TODO: Need a graphic for article by publishers.
-
+%\begin{center}
+%\includegraphics[scale=0.7]{articles_by_years.png}
+%\end{center}
 
 
 \begin{center}
-  \small
-  \begin{tabular}{ lll }
+  \begin{figure}
+   \small
+   \begin{tabular}{ lll }
     \bf Category & \bf Class & \bf \# of articles \\
     \hline
-    \multirow{7}{*}{Detection Srategy}
+    \multirow{7}{*}{Detection Strategy}
     & \multicolumn{1}{l}{AI}           & \multicolumn{1}{l}{11} \\
-    & \multicolumn{1}{l}{Logic}        & \multicolumn{1}{l}{22} \\
-    & \multicolumn{1}{l}{Graph}        & \multicolumn{1}{l}{15} \\
+    & \multicolumn{1}{l}{Logic}        & \multicolumn{1}{l}{19} \\
+    & \multicolumn{1}{l}{Graph}        & \multicolumn{1}{l}{13} \\
     & \multicolumn{1}{l}{Metric}       & \multicolumn{1}{l}{7} \\
     & \multicolumn{1}{l}{Automata}     & \multicolumn{1}{l}{1} \\
-    & \multicolumn{1}{l}{Instr./Prof.} & \multicolumn{1}{l}{10} \\
-    & \multicolumn{1}{l}{Pattern Mathching}
+    & \multicolumn{1}{l}{Instr./Prof.} & \multicolumn{1}{l}{9} \\
+    & \multicolumn{1}{l}{Pattern Matching}
                                        & \multicolumn{1}{l}{8} \\
-    & \multicolumn{1}{l}{Others}       & \multicolumn{1}{l}{23} \\
+    & \multicolumn{1}{l}{Others}       & \multicolumn{1}{l}{19} \\
     \hline
-    \multirow{2}{*}{\textbf{Language Dependance}}
-    & \multicolumn{1}{l}{Dependant}    & \multicolumn{1}{l}{XXX} \\
-    & \multicolumn{1}{l}{Independant}  & \multicolumn{1}{l}{XXX} \\
+    \multirow{2}{*}{\textbf{Language Dependence}}
+    & \multicolumn{1}{l}{Dependant}    & \multicolumn{1}{l}{37} \\
+    & \multicolumn{1}{l}{Independent}  & \multicolumn{1}{l}{16} \\
     \hline
     \multirow{3}{*}{\textbf{Analysis Type}}
-    & \multicolumn{1}{l}{Static}       & \multicolumn{1}{l}{XXX} \\
-    & \multicolumn{1}{l}{Dynamic}      & \multicolumn{1}{l}{XXX} \\
-    & \multicolumn{1}{l}{Hybrid}       & \multicolumn{1}{l}{XXX} \\
+    & \multicolumn{1}{l}{Static}       & \multicolumn{1}{l}{25} \\
+    & \multicolumn{1}{l}{Dynamic}      & \multicolumn{1}{l}{13} \\
+    & \multicolumn{1}{l}{Hybrid}       & \multicolumn{1}{l}{17} \\
     \hline
     \multirow{3}{*}{Detection Level}
     & \multicolumn{1}{l}{Execution}    & \multicolumn{1}{l}{8} \\
     & \multicolumn{1}{l}{Source}       & \multicolumn{1}{l}{44} \\
-    & \multicolumn{1}{l}{Model}        & \multicolumn{1}{l}{7} \\
+    & \multicolumn{1}{l}{Model}        & \multicolumn{1}{l}{8} \\
     \hline
     \multirow{2}{*}{Detection generality}
-    & \multicolumn{1}{l}{Specific}     & \multicolumn{1}{l}{XXX} \\
-    & \multicolumn{1}{l}{General}      & \multicolumn{1}{l}{XXX} \\
+    & \multicolumn{1}{l}{Specific}     & \multicolumn{1}{l}{40} \\
+    & \multicolumn{1}{l}{General}      & \multicolumn{1}{l}{11} \\
     \hline
     \multirow{4}{*}{Detected Pattern Types}
-    & \multicolumn{1}{l}{Creationnal}  & \multicolumn{1}{l}{23} \\
-    & \multicolumn{1}{l}{Structural}   & \multicolumn{1}{l}{34} \\
-    & \multicolumn{1}{l}{Behaviour}    & \multicolumn{1}{l}{49} \\
+    & \multicolumn{1}{l}{Creational}  & \multicolumn{1}{l}{22} \\
+    & \multicolumn{1}{l}{Structural}   & \multicolumn{1}{l}{33} \\
+    & \multicolumn{1}{l}{Behavior}    & \multicolumn{1}{l}{37} \\
     & \multicolumn{1}{l}{Other/Not Specified}
-                                       & \multicolumn{1}{l}{17} \\
+                                       & \multicolumn{1}{l}{12} \\
     \hline
     \multirow{6}{*}{Validation Method}
     & \multicolumn{1}{l}{Benchmark}    & \multicolumn{1}{l}{7} \\
-    & \multicolumn{1}{l}{Case Study}   & \multicolumn{1}{l}{40} \\
+    & \multicolumn{1}{l}{Case Study}   & \multicolumn{1}{l}{37} \\
     & \multicolumn{1}{l}{Experiment}   & \multicolumn{1}{l}{8} \\
     & \multicolumn{1}{l}{Survey}       & \multicolumn{1}{l}{0} \\
     & \multicolumn{1}{l}{Other}        & \multicolumn{1}{l}{1} \\
-    & \multicolumn{1}{l}{None}         & \multicolumn{1}{l}{11}
-  \end{tabular}
+    & \multicolumn{1}{l}{None}         & \multicolumn{1}{l}{8}
+   \end{tabular}
+   \caption{Classification Results - Categories whose values represent disjoint sets are presented in bold}
+
+  \end{figure}
 \end{center}
+
+\subsection{Publication Venue Distribution}
+% Need a graphic for article by publishers.
+
 
 \subsection{Detection Strategy}
 
 Most of the detection strategies used fall either in the 
-\textit{logic/formalisation} or \textit{other} class.
+\textit{logic/formalization} or \textit{other} class.
 The first one was probably overly broad since it included any solution using
-inference rules engines, formalisation and semantic web ontologies.
-Surprisingly, the latter strategy was the focus of many articles. 
+inference rules engines, formalization and semantic web ontologies.
+Surprisingly, the latter strategy was the focus of many articles.
+
+Another strong 
 
 
 %\begin{center}
@@ -393,6 +416,7 @@ Surprisingly, the latter strategy was the focus of many articles.
 \subsection{Analysis Type}
 
 Design pattern detection can be done either statically or dynamically.
+So
 
 
 
@@ -403,14 +427,15 @@ Design pattern detection can be done either statically or dynamically.
 
 \subsection{Detected Pattern Types}
 
-The Gang of Four identified three design pattern types: creationnal,
+The Gang of Four identified three design pattern types: creational,
 behavioural and structural patterns.
-Due to the nature of each pattern types, it is usally aknowledged that
-structural patterns should be easier to detect than behavioural patterns and
-that the later are easier than creationnal patterns (citation needed). 
+
+Due to the nature of each pattern types, our intuition would dictate that
+structural patterns should be easier to detect than behavioral patterns and
+that the later are easier than creational patterns (citation needed). 
 It was expected that this ordering would appear in the number of articles
 associated with each pattern types. 
-However, we can see that the detection of behavioural patterns has been the
+However, we can see that the detection of behavioral patterns has been the
 subject of more articles than the two others.
 
 %\begin{center}
@@ -419,11 +444,34 @@ subject of more articles than the two others.
 
 This can be explained either by the fact that structural design patterns
 detection is considered as an easy problem, thus less likely to be the main
-focus of a research paper or by the possibility is that behavioural design
+focus of a research paper or by the possibility that behavioral design
 patterns are in fact easier to detect than structural ones.
-However, we believe the first possibilty to be more likely.
+We believe the first possibility to be more likely.
+
+Of interest is the relation between the type of analysis and the type of
+patterns detected. \textit{Fig. 5} and \textit{Fig. 6}
+respectively presents the distribution of the number of articles and the
+propotion.
 
 
+\begin{figure}
+ \centering
+ \begin{tabular}{llll}
+             & Static & Dynamic & Hybrid \\
+ \hline
+ Structural  & 18 & 7 & 8 \\
+ Behavioural & 17 & 7 & 13 \\
+ Creationnal & 14 & 1 & 7 \\
+ Other       & 3 & 5 & 4 \\
+ \end{tabular}
+ \caption{Analysis type according to detected pattern type}
+\end{figure}
+
+\begin{figure*}[tb]
+ \centering
+ \includegraphics[scale=0.7]{analysis_v_pattern.png}
+ \caption{Analysis type distribution per detected pattern type}
+\end{figure*}
 
 \subsection{Language dependance}
 The main focus of this category was to identify the existance of language
@@ -433,10 +481,8 @@ To identify truly generic detection methods, proposed solutions requiring a
 frontend to implement have been classified as being dependant on the source
 language. 
 
-The majority of techniques are language dependant and the most used 
-languages are Java and C++
-
-But those detection methods can be easily converted to other languages
+The majority of techniques are language dependent and the most used 
+languages are Java and C++, but those detection methods can be easily converted to other languages
 just by modifying the font-end.
 
 Haotian and Shu[52] took a different approach by instrumenting Java bytecode
@@ -462,16 +508,20 @@ This category was used to expose specific pattern detection methods.
 As expected, papers tend to present detection method for detecting patterns
 in general.
 
+Systems based on rules are examples of gendeals with an inference engine for which
+
+
 Some papers worth noting presents specifics ways to detect particular patterns.
 
-Marjan Heričko and Simon Beloglavec[355] presents a way of identifying
-composite design pattern, composite here corresponding to the composition of
-atomic DP (MVC).
+Heričko and Beloglavec[355] presents a way of identifying
+composite design pattern, not to be confused with the definition of the 
+composite pattern defined by the GoF, here composite pattern corresponds to the
+composition of atomic design pattern (the Model View Controler being an
+example of a composite pattern).
 
 Ren and Zhao[80] used and hybrid analysis based on OWL, an ontology system,
 to recover instances candidates of Observer pattern followed by a dynamic
 analysis to accept or reject the recovered candidates.
-
 
 %\begin{center}
 %\includegraphics[scale=0.75]{detection_generality.png}
@@ -480,15 +530,55 @@ analysis to accept or reject the recovered candidates.
 
 \subsection{Validation Methods}
 
+Case studies are the most common methods of validation with a weak rate of
+experiences and a total absence of true benchmarks.
+
+Researchers in the Java world seem to have agreed on the use of JHotDraw,
+JRefactory, JUnit, and AWT for evaluation.
+However, while JHotDraw, a software known for its internal use of design
+pattern, is the most frequently used, there is no clear benchmark.
+
+Very few articles have taken the time to do a proper comparative evaluation.
+De Lucia et al.[151] did an excellent work in that regard.
+They compared their approach to existing tools and P-MARt's knowledge base
+of pattern instances in JHotDraw and JRefactory, thus building a
+strong case for their technique.
+Unfortunately, most technique seem to be evaluated in a vacuum which makes it
+difficult to compare their efficiency.
+
+Also, because most technique are language dependant, comparative studies are
+often times limited to case study in one language.
+Again, few articles try to present results taken from software in written in
+different languages.
+This is problematic because no common ground for comparison exists between
+technique whose evaluation is done on software written in different languages.
+Gueheneux and Antoniol[255] presented an extensive evaluation of DeMIMA on
+five open source Java projects and 33 industrial component written in C++.
+While the use of closed source component is in itself problematic, the
+evaluation of their system on both Java and C++ programs is noteworthy.
+
+%TODO: citation needed
+Other articles, due to the work involved in manually identifying instances of
+design pattern for evaluation, have simply choosen to compare their result to
+the output of existing tools.
+Even if some use multiple tools to cross check the identified pattern instances,
+we believe such evaluation methods are flawed since we don't know how well
+those tools perform due to the absence of a standard benchmark.
+The existence of pattern repository like P-MARt should supersede those
+validation technique.
+
+
+We have also noticed that there is no validation standards, there is a lot
+of tools that can detect patterns, but since there are no standards 
+none of those tools can be truly reliable.
+
+All these issues seem to indicate a lack of maturity of the field of design
+pattern detection.
+At least, more work is needed compare the different techniques.
+
 %\begin{center}
 %\includegraphics[scale=0.75]{validation_method.png}
 %\end{center}
-
-
-\subsection{Detected pattern types according to analysis type}
-% Need graphics
-
-
 
 \section{Study limitations}
 
@@ -533,27 +623,31 @@ This difference is due to an error when we compiled the articles that passed
 the screening phase where one article was featured twice.
 Since the remaining number of articles was not divisible by three, this same
 reviewer had already one less article to read.
-We believe this error has no effect on the overall result. \\
+We believe this error has no effect on the overall result.
 
-At first, we defined the detection level to be a disjoint classification category.
-However during the classification phase of our study, we stumbled upon unfoseen cases
-where the detection was done at two levels. We had to change the classification
-scheme to allow those cases.
+At first, we defined the detection level to be a disjoint classification
+category.
+However during the classification phase of our study, we stumbled upon
+unforeseen cases where the detection was done at two levels.
+We had to change the classification scheme to allow those cases.
 
 
 
 \section{Related works}
 
+While no other systematic mapping study have been done on design pattern
+detection technique, other reseachers attempted to address the problems
+present in the field.
 
-
-So far, no other comparable studies has been done on the field of design pattern
-recognition.
-
-(article on method validation) have identified a problem in the evaluation of design
-pattern detection methods. This problem has been observed in our evaluation of the
-domain in that most articles evaluates their algorithms with case studies that are
-hardly comparable.
-
+Pettersson, Lowe, and Nivre[190] identified a lack of proper evaluation of 
+design pattern detection technique, in part due to the absence of an accepted
+standard benchmark.
+This problem has been observed in our evaluation of the domain in that most
+articles evaluates their algorithms with case studies that are hardly
+comparable.
+They identified the existance of evaluation gold standard in JHotDraw, Swing
+and AWT  and pushed for the definition of a standard benchmark made of varied
+systems (language, size, etc.)
 
 
 
@@ -587,7 +681,7 @@ Appendixes should appear before the acknowledgment.
 
 \section*{ACKNOWLEDGMENT}
 
-Acknowledgement
+Acknowledgment
 
 
 \begin{thebibliography}{99}

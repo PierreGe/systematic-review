@@ -2,6 +2,8 @@ import pandas as pd
 import sys
 import math
 from fractions import gcd
+import matplotlib.pyplot as plt
+from matplotlib.gridspec import GridSpec
 import itertools as it
 
 filename = "tm.csv"
@@ -63,7 +65,63 @@ print "Survey:\t\t"      + str(len(data[data["Vm-survey"].notnull()]))
 print "Other:\t\t"       + str(len(data[data["Vm-other"].notnull()]))
 print "None:\t\t"        + str(len(data[data["Vm-none"].notnull()]))
 print ""
+print "== Analysis type / deteted pattern types"
+print "\t\tStatic\tDynamic\tHybrid"
+cs = len(data[data["Pt-creationnal"].notnull() & data["At-static"].notnull()])
+cd = len(data[data["Pt-creationnal"].notnull() & data["At-dynamic"].notnull()])
+ch = len(data[data["Pt-creationnal"].notnull() & data["At-hybrid"].notnull()])
+bs = len(data[data["Pt-behaviour"].notnull() & data["At-static"].notnull()])
+bd = len(data[data["Pt-behaviour"].notnull() & data["At-dynamic"].notnull()])
+bh = len(data[data["Pt-behaviour"].notnull() & data["At-hybrid"].notnull()])
+ss = len(data[data["Pt-structural"].notnull() & data["At-static"].notnull()])
+sd = len(data[data["Pt-structural"].notnull() & data["At-dynamic"].notnull()])
+sh = len(data[data["Pt-structural"].notnull() & data["At-hybrid"].notnull()])
+os = len(data[data["Pt-other"].notnull() & data["At-static"].notnull()])
+od = len(data[data["Pt-other"].notnull() & data["At-dynamic"].notnull()])
+oh = len(data[data["Pt-other"].notnull() & data["At-hybrid"].notnull()])
+print "Creationnal:\t" + str(cs) + "\t" + str(cd) + "\t" + str(ch)
+print "Behavioural:\t" + str(bs) + "\t" + str(bd) + "\t" + str(bh)
+print "Structural:\t"  + str(ss) + "\t" + str(sd) + "\t" + str(sh)
+print "Other:\t\t"     + str(os) + "\t" +  str(od) + "\t" + str(oh)
+
+#====================================================================
+# Year hist
+#====================================================================
+
+plt.hist(data["Date publication"], facecolor="grey")
+plt.title("Distribution of articles over the years")
+plt.savefig("../img/year_distribution.png")
+
+#====================================================================
+# Pattern distribution
+#====================================================================
+
+fig = plt.figure(figsize=(8,2.5))
+gs1 = GridSpec(1, 4)
+p1 = fig.add_subplot(gs1[0])
+p2 = fig.add_subplot(gs1[1])
+p3 = fig.add_subplot(gs1[2])
+p4 = fig.add_subplot(gs1[3])
+
+p1.pie([ss, sd, sh], autopct='%1.1f%%', pctdistance=1.4, colors=["lightgrey", "grey", "darkgrey"])
+p1.set_title("Structural")
+p1.axis("equal")
+
+p2.pie([bs, bd, bh], autopct='%1.1f%%', pctdistance=1.4,  colors=["lightgrey", "grey", "darkgrey"])
+p2.set_title("Behavioural")
+p2.axis("equal")
+
+p3.pie([cs, cd, ch], autopct='%1.1f%%', pctdistance=1.4,  colors=["lightgrey", "grey", "darkgrey"])
+p3.set_title("Creationnal")
+p3.axis("equal")
+
+gs1.tight_layout(fig)
 
 
+p, _ , _=p4.pie([cs, cd, ch], autopct='%1.1f%%', colors=["lightgrey", "grey", "darkgrey"])
 
-
+p4.axis("equal")
+p4.set_visible(False)
+lgd = fig.legend(p, ["Static", "Dynamic", "Hybrid"], loc="right")
+fig.savefig("../img/analysis_v_pattern.png")
+#plt.savefig("../img/creationnal.png", bbox_extra_artists=(lgd,), bbox_inches='tight')
