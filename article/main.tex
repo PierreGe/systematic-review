@@ -282,7 +282,7 @@ screening to 401.
 \subsection{Screening}
 
 After having queried the database and removed the duplicates, we exported the
-results found as a .csv file and proceeded to screening.
+results found as a .csv file and proceeded to the screening.
 
 As we were three authors to work on the screening, we created three pairs
 of evaluators and distributed the articles evenly between them.
@@ -312,7 +312,7 @@ individual evaluator.
    \hline {}
    1 & 132 & 0.88 \\
    2 & 133 & 0.66 \\
-   3 & 134 & 0.91 \\
+   3 & 133 & 0.91 \\
  \end{tabular}
  \caption{Cohen's Kappa coefficients}
 \end{figure}
@@ -321,18 +321,27 @@ For each article, we ensured that articles were rated consistently amongst the
 evaluators.
 
 Disagreement in the rating of article inside a pair were firstly dealt with a
-reconsidaration of the rating of each individual according to the arguments of his opposing rater.
+reconsidaration of the rating by each individual according to the arguments of
+his opposing rater.
 In the case of unresolved disagreement, we brought our case before a senior
 researcher that published in the studied field who would instruct us over the final
 decision.
-If even he could settle de disagreement, the article was included to possibly be
+If even he couldn't settle de disagreement, the article was included to possibly be
 excluded at a later point.
+
+94 articles passed our exclusion scheme and thus the screening phase. 
+
 
 
 \subsubsection{Cohen's kappa coefficient}
+Cohen's kappa coefficient is a measure of the inter-agreement between two rater
+over the classification of a set of values.
+A high coefficient value is indicative of a relative agreement between a pair
+of raters.
+
 We calculated inter-rater agreement Cohen's kappa coefficient over the
-rejection and acceptation of each articles, which gaves us an average coefficient
-of 0.82.
+rejection and acceptation of each articles, which gaves us an average
+coefficient of 0.81.
 Individual results for each pair of evaluators is given in \textit{Fig. 2}
 alongside the number of articles assigned to each one.
 
@@ -341,6 +350,9 @@ a good agreement \cite{c3}.
 
 
 \subsection{Classification}
+
+Considering the number of articles that passed the screening phase
+
 
 
 \section{STUDY RESULTS}
@@ -435,8 +447,13 @@ Another strong
 
 \subsection{Analysis Type}
 
-Design pattern detection can be done either statically or dynamically.
-So
+Design pattern detection can be done either statically, dynamically or in
+a combination of both.
+
+A little bit less than half of the articles favoured a static approach to the
+recognition of design motifs.
+
+
 
 
 
@@ -462,8 +479,8 @@ We believe the first possibility to be more likely.
 
 Of interest is the relation between the type of analysis and the type of
 patterns detected. \textit{Fig. 5} and \textit{Fig. 6}
-respectively presents the distribution of the number of articles and the
-propotion.
+respectively presents the distribution of the number of articles and their
+proportion in this relation. 
 
 
 \begin{figure}
@@ -486,6 +503,9 @@ propotion.
 \end{figure*}
 
 
+
+
+
 \subsection{Language dependance}
 The main focus of this category was to identify the existance of language
 independant solutions to the detection of design patterns.
@@ -495,16 +515,19 @@ frontend to implement have been classified as being dependant on the source
 language. 
 
 The majority of techniques are language dependent and the most used 
-languages are Java and C++, but those detection methods can be easily converted to other languages
-just by modifying the font-end.
-
-Haotian and Shu[52] took a different approach by instrumenting Java bytecode
+languages are Java and C++, but those detection methods can be easily converted
+to other languages by a simple modification of a font-end.
 
 
 \subsection{Detection Level}
+
 We found out that almost all of design patterns detection methods 
-identify the patterns on a source code level, though, the detection could
+identify the patterns at the source code level, though, the detection could
 be done on multiple levels.
+
+When detection was done at multiple level, more often than not it was at both
+the source and execution level.
+
 
 
 \subsection{Detection generality}
@@ -513,8 +536,10 @@ This category was used to expose specific pattern detection methods.
 As expected, papers tend to present detection method for detecting patterns
 in general.
 
-Systems based on rules are examples of gendeals with an inference engine for which
-
+Systems based on rules are examples of general technique for which 
+an inference engine is able to handle any patterns it has a rule for.
+Di Martino and Esposito[40] presented a technique where ODOL is used
+to describe the structural aspects of patterns.
 
 Some papers worth noting presents specifics ways to detect particular patterns.
 
@@ -576,9 +601,6 @@ All these issues seem to indicate a lack of maturity of the field of design
 pattern detection.
 At least, more work is necessary to compare the different techniques.
 
-%\begin{center}
-%\includegraphics[scale=0.75]{validation_method.png}
-%\end{center}
 
 \section{Study limitations}
 
@@ -592,14 +614,13 @@ It has been assumed that it does an exhaustive indexing of the journals
 and conferences it references and that those sources includes most of the
 relevant publications that covers software design pattern detection.
 To mitigate the possibility of missing relevant articles we made sure that
-Scopus indexes the big venues of software engineering (ACM, Springer, IEEE, and
-???).
+Scopus indexes the big venues of software engineering (ACM, Springer and IEEE).
 
 \subsection{Screening}
 
 There is a possibility for relevant articles to have been excluded at the
 screening level due to a non representative title and abstract.
-We believe the possibility to be unlikely since each article were screened by
+We believe the possibility to be unlikely since each article was screened by
 two reviewers and that if the article had a possibly misleading title, it would
 be rejected after a complete reading done before the classification phase.
 
