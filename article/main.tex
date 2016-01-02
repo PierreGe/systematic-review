@@ -488,8 +488,21 @@ Another strong
 Design pattern detection can be done either statically, dynamically or in
 a combination of both.
 
+Choosing a specific type of analysis tels a lot about the associated technique.
+Static analysis is useful when trying to extract structural and semantic
+information about a program while dynamic analysis makes it easier to get
+information about the behaviour of an algorithm.
+
+The analysis type also affect the kind of tool the algorithm is implemented
+in.
+In fact dynamic analysis requires much more processing time due to the
+profiling aspect associated with it.
+This effectively prevent the inclusion of detection algorithm as a realtime
+programing aid.
+
 A little bit less than half of the articles favoured a static approach to the
-recognition of design motifs.
+recognition of design motifs, while the other half had a dynamic aspect to
+their detection methods.
 
 
 \subsection{Detected Pattern Types}
@@ -504,7 +517,6 @@ It was expected that this ordering would appear in the number of articles
 associated with each pattern types. 
 However, we can see that the detection of behavioral patterns has been the
 subject of more articles than the two others.
-
 
 This can be explained either by the fact that structural design patterns
 detection is considered as an easy problem, thus less likely to be the main
@@ -537,6 +549,19 @@ proportion in this relation.
  \caption{Analysis type distribution per detected pattern type}
 \end{figure*}
 
+For structural patterns, a static analysis can be said to be efficient enough.
+More than half the detection method used such an analysis with good results
+
+For behavioural pattern, static analysis migh be sufficient but a majority of
+article includes a dynamic component to the anaylis.
+Tsantalis et al.[325] had good result with their graph similarity scoring
+approach for detecting structural and behavioural pattern with a static method.
+
+Creationnal patterns show an interesting distribution of the analysis types.
+In fact, it could be said that their identification is difficult with
+ a dynamic analysis alone.
+Strangely though, a high proportion of article report the recognition of
+creationnal design patterns with only a static analysis.
 
 
 
