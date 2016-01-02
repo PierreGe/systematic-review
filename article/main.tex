@@ -363,11 +363,26 @@ a good agreement \cite{c3}.
 
 \subsection{Classification}
 
-Considering the number of articles that passed the screening phase
+For the classification phase, we distributed the 94 articles evenly among the
+three evaluators.
+Each article has been read thoroughly and classified according to the
+classification scheme by individual reviewers if considered relevant to the
+study.
 
+Misleading articles that passed screening phase were removed at that point.
+A total of 39 articles have been rejected in this fashion leaving a total of
+55 articles relevant to our study
 
+The resulting classification and interpretation will be discussed in the next
+section.
 
 \section{STUDY RESULTS}
+
+In this section, the article will analyse different measures obtained from
+the final set of articles.
+More precisely, the article will look at the yearly distribution, the publisher
+distribution, the publication type distribution and each category define
+earlier in the classification scheme.
 
 \subsection{Yearly distribution}
 
@@ -388,6 +403,17 @@ tools.
   \caption{}
 \end{figure}
 
+\begin{figure}
+  \centering
+  \includegraphics[scale=0.40]{publisher.png}
+  \caption{Distribution of papers by publishers}
+\end{figure}
+
+\begin{figure}
+  \centering
+  \includegraphics[scale=0.40]{doctype.png}
+  \caption{Distribution of papers by type of document}
+\end{figure}
 
 \begin{figure}
   \centering
@@ -442,8 +468,20 @@ tools.
 
 \end{figure}
 
-\subsection{Publication Venue Distribution}
-% Need a graphic for article by publishers.
+\subsection{Publishers Distribution}
+
+\textit{Fig. 4} shows a partial distribution of the articles between their
+resspective publishers. 
+In many cases, data exported from Scopus is lacking the publisher which
+resulted in the classification of many articles as \textit{Other}.
+Manual inspection would be required.
+
+\subsection{Publication type distribution}
+
+\textit{Fig. 5} shows the distribution of the papers according to their
+types.
+Unsurprisingly, half of them are conference paper, while a third are journal
+articles.
 
 
 \subsection{Detection Strategy}
@@ -462,11 +500,21 @@ Another strong
 Design pattern detection can be done either statically, dynamically or in
 a combination of both.
 
+Choosing a specific type of analysis tels a lot about the associated technique.
+Static analysis is useful when trying to extract structural and semantic
+information about a program while dynamic analysis makes it easier to get
+information about the behaviour of an algorithm.
+
+The analysis type also affect the kind of tool the algorithm is implemented
+in.
+In fact dynamic analysis requires much more processing time due to the
+profiling aspect associated with it.
+This effectively prevent the inclusion of detection algorithm as a realtime
+programing aid.
+
 A little bit less than half of the articles favoured a static approach to the
-recognition of design motifs.
-
-
-
+recognition of design motifs, while the other half had a dynamic aspect to
+their detection methods.
 
 
 \subsection{Detected Pattern Types}
@@ -482,7 +530,6 @@ associated with each pattern types.
 However, we can see that the detection of behavioral patterns has been the
 subject of more articles than the two others.
 
-
 This can be explained either by the fact that structural design patterns
 detection is considered as an easy problem, thus less likely to be the main
 focus of a research paper or by the possibility that behavioral design
@@ -490,7 +537,7 @@ patterns are in fact easier to detect than structural ones.
 We believe the first possibility to be more likely.
 
 Of interest is the relation between the type of analysis and the type of
-patterns detected. \textit{Fig. 5} and \textit{Fig. 6}
+patterns detected. \textit{Fig. 7} and \textit{Fig. 8}
 respectively presents the distribution of the number of articles and their
 proportion in this relation. 
 
@@ -514,6 +561,19 @@ proportion in this relation.
  \caption{Analysis type distribution per detected pattern type}
 \end{figure*}
 
+For structural patterns, a static analysis can be said to be efficient enough.
+More than half the detection method used such an analysis with good results
+
+For behavioural pattern, static analysis migh be sufficient but a majority of
+article includes a dynamic component to the anaylis.
+Tsantalis et al.[325] had good result with their graph similarity scoring
+approach for detecting structural and behavioural pattern with a static method.
+
+Creationnal patterns show an interesting distribution of the analysis types.
+In fact, it could be said that their identification is difficult with
+ a dynamic analysis alone.
+Strangely though, a high proportion of article report the recognition of
+creationnal design patterns with only a static analysis.
 
 
 
