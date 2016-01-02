@@ -9,6 +9,7 @@ import itertools as it
 filename = "tm.csv"
 
 data = pd.read_csv(filename, quotechar='"', skipinitialspace=True)
+scopus = pd.read_csv("scopus2.csv", quotechar='"', skipinitialspace=True)
 
 data_classification = data[data["Rejet"].isnull()]
 data_reject = data[data["Rejet"].notnull()]
@@ -19,10 +20,23 @@ print "Accepted for classification:\t" + str(len(data_classification))
 print "Rejected before classification:\t" + str(len(data_reject))
 print "======================================================"
 data = data_classification
+r = pd.merge(data, scopus, on="Article", how="inner")
+
 print "== Yearly distribution ==============================="
 for y in xrange(2000,2016):
     print str(y) + ":\t\t" + str(len(data[data["Date publication"] == y]))
 print ""
+print "== Document type ====================================="
+a=len(r[r["Document Type"] == "Article"])
+b=len(r[r["Document Type"] == "Conference Paper"])
+c=len(r[r["Document Type"].apply(lambda x: "workshop" in x or "Workshop" in x)])
+print "Article:\t\t" + str(a)
+print "Conference paper:\t" + str(b) 
+print "Workshop:\t" + str(c)
+print "Proceedings:\t" + str(55 - a - b - c)
+
+
+
 print "== Detection strategy ================================"
 print "Ai:\t\t"        + str(len(data[data["Ds-ai"].notnull()]))
 print "Logic:\t\t"     + str(len(data[data["Ds-logic"].notnull()]))
@@ -91,6 +105,64 @@ print "Other:\t\t"     + str(os) + "\t" +  str(od) + "\t" + str(oh)
 plt.hist(data["Date publication"], facecolor="grey")
 plt.title("Distribution of articles over the years")
 plt.savefig("../img/year_distribution.png")
+
+# Document type
+
+fig = plt.figure(figsize=(8,4))
+gs1 = GridSpec(1, 2)
+p1 = fig.add_subplot(gs1[0])
+p2 = fig.add_subplot(gs1[1])
+
+p1.pie([a,b,c, 55 - a - b- c], autopct='%1.1f%%', pctdistance=1.2, colors=
+["lightgrey", "grey", "darkgrey", "black"])
+p1.axis("equal")
+
+p, _ , _=p2.pie([a,b,c, 55 - a - b- c], autopct='%1.1f%%', pctdistance=1.2, colors=
+["lightgrey", "grey", "darkgrey", "black"])
+p2.axis("equal")
+p2.set_visible(False)
+
+
+lgd = fig.legend(p, ["Article", "Conference Paper", "Workshop", "Proceedings"], loc="right")
+plt.title("Article by document type")
+fig.savefig("../img/doctype.png")
+
+# Publications
+
+fig = plt.figure(figsize=(8,4))
+gs1 = GridSpec(1, 2)
+p1 = fig.add_subplot(gs1[0])
+p2 = fig.add_subplot(gs1[1])
+
+def test(publisher):
+    def a(x):
+        if type(x) is float:
+            return False 
+        return publisher in x
+    return a
+
+def dotest(publisher):
+  return r["Abbreviated Source Title"].apply(test(publisher)) \
+       | r["Publisher"].apply(test(publisher))
+
+w=len(r[dotest("ACM")])
+x=len(r[dotest("IEEE")])
+y=len(r[dotest("Elsevier")])
+z=len(r[dotest("Springer")])
+
+p1.pie([w,x,y,z, 55 - w - x- y -z], autopct='%1.1f%%', pctdistance=1.2, colors=
+["white", "lightgrey", "grey", "darkgrey", "black"])
+p1.axis("equal")
+
+p, _ , _=p2.pie([w,x,y,z, 55 - w - x- y -z], autopct='%1.1f%%', pctdistance=1.2, colors=
+["white","lightgrey", "grey", "darkgrey", "black"])
+p2.axis("equal")
+p2.set_visible(False)
+
+
+lgd = fig.legend(p, ["ACM", "IEEE", "Elsevier", "Springer", "Other"], loc="right")
+plt.title("Article by publishers")
+fig.savefig("../img/publisher.png")
 
 #====================================================================
 # Pattern distribution
